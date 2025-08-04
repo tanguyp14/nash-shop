@@ -11,28 +11,6 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "tylt_loox_app_PKD9eK": {
-      "type": "tylt-loox-app",
-      "name": "TYLT - Loox Custom",
-      "settings": {
-        "csv_url": "https://cdn.shopify.com/s/files/1/0555/3487/8890/files/reviews.NJZEcaejb3.csv?v=1747142929",
-        "csv_version": "v1",
-        "slides_desktop": 3,
-        "slides_mobile": 1,
-        "max_reviews": 20,
-        "show_all": false,
-        "access_token": "3bb68638ee550d1482da3208255a3a68",
-        "shop_domain": "paiheme-studio.myshopify.com"
-      }
-    },
-    "tylt_footer_VYdbEQ": {
-      "type": "tylt-footer",
-      "settings": {
-        "menu": "main-menu",
-        "titre": "Ne loupe aucune info",
-        "sous_titre": "Inscris-toi à la newsletter"
-      }
-    },
     "footer": {
       "type": "footer",
       "disabled": true,
@@ -54,8 +32,6 @@
     }
   },
   "order": [
-    "tylt_loox_app_PKD9eK",
-    "tylt_footer_VYdbEQ",
     "footer"
   ]
 }
