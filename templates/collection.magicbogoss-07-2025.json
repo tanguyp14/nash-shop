@@ -1,0 +1,214 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": true,
+        "color_scheme": "accent-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 36,
+        "columns_desktop": 5,
+        "color_scheme": "accent-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "hats_slide_responsive_ge8ixW": {
+      "type": "hats-slide_responsive",
+      "blocks": {
+        "slide_LmiVwE": {
+          "type": "slide",
+          "settings": {
+            "date_picker": "12-24-2022",
+            "image_slide_desk": "shopify://shop_images/BANNIERE_DESK_7_0df2c064-02db-40a3-8304-0508bf124012.webp",
+            "image_slide_mobile": "shopify://shop_images/BANNIERE_MOBILE_6.webp",
+            "link_slide": "",
+            "credit_name": "Agence plein format",
+            "credit_link": "https://www.agence-pleinformat.com/"
+          }
+        }
+      },
+      "block_order": [
+        "slide_LmiVwE"
+      ],
+      "settings": {
+        "margin-top": 0
+      }
+    },
+    "hats_multi_marquee_4AEApF": {
+      "type": "hats-multi-marquee",
+      "blocks": {
+        "text_YjezGQ": {
+          "type": "text",
+          "settings": {
+            "text": "MAGIC BEAU GOSSE x PAIHEME STUDIO",
+            "rotate": 0,
+            "top": 0,
+            "typo_size": 4,
+            "typo_text": "'Poppins', sans-serif",
+            "typo_text_transform": "uppercase",
+            "color": "#fbf0c0",
+            "font_style": "italic",
+            "typo_text_weight": 900,
+            "bg_color": "#623166"
+          }
+        }
+      },
+      "block_order": [
+        "text_YjezGQ"
+      ],
+      "settings": {
+        "margin-top": 0,
+        "height": 4
+      }
+    },
+    "featured_collection_Cghaih": {
+      "type": "featured-collection",
+      "custom_css": [
+        "slider-component {max-width: 1000px;}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Les affiches",
+        "icon_collec": "shopify://shop_images/KANJI.webp",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "magic-bogoss-prints",
+        "products_to_show": 2,
+        "columns_desktop": 2,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "tylt_gallerie_mixte_MRrCVJ": {
+      "type": "tylt_gallerie_mixte",
+      "blocks": {
+        "media_block_kAH3MF": {
+          "type": "media_block",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/magicxpaiheme-5_copie.webp",
+            "product": "",
+            "product_external": "https://magicbeaugosse.fr/products/magic-t-shirt"
+          }
+        },
+        "media_block_PyYCL9": {
+          "type": "media_block",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/magicxpaiheme-2_copie.webp",
+            "product": "",
+            "product_external": "https://magicbeaugosse.fr/products/magic-t-shirt"
+          }
+        },
+        "media_block_kQcppF": {
+          "type": "media_block",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/magicxpaiheme-4.webp",
+            "product": "",
+            "product_external": "https://magicbeaugosse.fr/products/magic-t-shirt"
+          }
+        }
+      },
+      "block_order": [
+        "media_block_kAH3MF",
+        "media_block_PyYCL9",
+        "media_block_kQcppF"
+      ],
+      "name": "TYLT - Galerie mixte",
+      "settings": {}
+    },
+    "tylt_gallerie_mixte_dDXBMP": {
+      "type": "tylt_gallerie_mixte",
+      "blocks": {
+        "media_block_fmfYr8": {
+          "type": "media_block",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/t-blanc.jpg",
+            "product": "",
+            "product_external": ""
+          }
+        },
+        "media_block_HLQACY": {
+          "type": "media_block",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/t-blanc-3.jpg",
+            "product": "",
+            "product_external": ""
+          }
+        },
+        "media_block_bPritN": {
+          "type": "media_block",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/t-blanc-2_29007469-4a33-46f1-9d93-7c60a41e14f7.jpg",
+            "product": "",
+            "product_external": ""
+          }
+        }
+      },
+      "block_order": [
+        "media_block_fmfYr8",
+        "media_block_HLQACY",
+        "media_block_bPritN"
+      ],
+      "disabled": true,
+      "name": "TYLT - Galerie mixte",
+      "settings": {}
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "hats_slide_responsive_ge8ixW",
+    "hats_multi_marquee_4AEApF",
+    "featured_collection_Cghaih",
+    "tylt_gallerie_mixte_MRrCVJ",
+    "tylt_gallerie_mixte_dDXBMP"
+  ]
+}

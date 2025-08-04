@@ -1,0 +1,164 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hats_slide_responsive_czEFBn": {
+      "type": "hats-slide_responsive",
+      "blocks": {
+        "slide_hwXYAa": {
+          "type": "slide",
+          "settings": {
+            "image_slide_desk": "shopify://shop_images/DESK_43acafb8-9b3d-4e61-ba63-13c3d5d3ee0c.jpg",
+            "image_slide_mobile": "shopify://shop_images/MOBILE_8d20fa28-92b3-4632-bf6f-8a1aa4f69917.jpg",
+            "link_slide": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_hwXYAa"
+      ],
+      "settings": {
+        "margin-top": 0
+      }
+    },
+    "hats_storedecks_top_TYTQqF": {
+      "type": "hats-storedecks-top",
+      "blocks": {
+        "text_NW8Akg": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/P4.2.svg"
+          }
+        },
+        "text_RyKLgb": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/P5.svg"
+          }
+        },
+        "text_Bcd7w9": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/P3.svg"
+          }
+        },
+        "text_fw8aUA": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/P2.2.svg"
+          }
+        },
+        "text_6hbWA3": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/P1.svg"
+          }
+        }
+      },
+      "block_order": [
+        "text_NW8Akg",
+        "text_RyKLgb",
+        "text_Bcd7w9",
+        "text_fw8aUA",
+        "text_6hbWA3"
+      ],
+      "settings": {}
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": true,
+        "color_scheme": "background-1"
+      }
+    },
+    "custom_liquid_pCacmV": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script>\n  console.log('Locksmith is active');\n  window.location.href = '/products/peinto-storefront';\n  </script>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "custom_css": [],
+      "settings": {
+        "products_per_page": 36,
+        "columns_desktop": 6,
+        "color_scheme": "accent-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "drawer",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 100,
+        "padding_bottom": 60
+      }
+    },
+    "hats_storedecks_bottom_iN6ajX": {
+      "type": "hats-storedecks-bottom",
+      "blocks": {
+        "text_8wnRKK": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/FEUILLES_3.svg"
+          }
+        },
+        "text_XgrjnL": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/FEUILLES_2.svg"
+          }
+        }
+      },
+      "block_order": [
+        "text_8wnRKK",
+        "text_XgrjnL"
+      ],
+      "settings": {}
+    },
+    "hats_slide_responsive_bgqMrA": {
+      "type": "hats-slide_responsive",
+      "blocks": {
+        "slide_pqG7rB": {
+          "type": "slide",
+          "settings": {
+            "image_slide_desk": "shopify://shop_images/FULL_DESK.svg",
+            "image_slide_mobile": "shopify://shop_images/FULL_MOBILE.svg",
+            "link_slide": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_pqG7rB"
+      ],
+      "settings": {
+        "margin-top": 0
+      }
+    }
+  },
+  "order": [
+    "hats_slide_responsive_czEFBn",
+    "hats_storedecks_top_TYTQqF",
+    "banner",
+    "custom_liquid_pCacmV",
+    "product-grid",
+    "hats_storedecks_bottom_iN6ajX",
+    "hats_slide_responsive_bgqMrA"
+  ]
+}

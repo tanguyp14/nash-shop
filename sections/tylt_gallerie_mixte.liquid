@@ -1,0 +1,104 @@
+{% schema %}
+{
+  "name": "TYLT - Galerie mixte",
+  "max_blocks": 3,
+  "blocks": [
+    {
+      "type": "media_block",
+      "name": "Média",
+      "settings": [
+        {
+          "type": "select",
+          "id": "media_type",
+          "label": "Type de média",
+          "options": [
+            { "value": "video", "label": "Vidéo" },
+            { "value": "image", "label": "Image" }
+          ],
+          "default": "image"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Vidéo Shopify"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Produit associé"
+        },
+                {
+          "type": "url",
+          "id": "product_external",
+          "label": "Produit associé EXTERNAL",
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "TYLT - Galerie mixte",
+      "blocks": [{ "type": "media_block" }, { "type": "media_block" }, { "type": "media_block" }]
+    }
+  ]
+}
+{% endschema %}
+
+{% assign media_count = section.blocks.size %}
+
+<section class="tylt_video_photo" data-aos="fade-up">
+  <div
+    class="
+      tylt_video_photo_galerie_flexible
+      {% if media_count == 1 %}
+        one-media
+      {% elsif media_count == 2 %}
+        two-media
+      {% elsif media_count == 3 %}
+        three-media
+      {% else %}
+        other-media
+      {% endif %}
+    "
+  >
+    {% for block in section.blocks %}
+      <div class="media-item">
+        {% if block.settings.media_type == 'video' and block.settings.video != blank %}
+          {{
+            block.settings.video
+            | video_tag: class: 'galerie-video', autoplay: true, muted: true, loop: true, controls: false
+          }}
+        {% elsif block.settings.media_type == 'image' and block.settings.image != blank %}
+            {% if block.settings.product.handle %}
+            <a href="{{ block.settings.product.url }}">
+              <img src="{{ block.settings.image | image_url: width: 800 }}" alt="Image galerie" class="galerie-image">
+            </a>
+            {% elsif block.settings.product_external != blank %}
+            <a href="{{ block.settings.product_external }}">
+              <img src="{{ block.settings.image | image_url: width: 800 }}" alt="Image galerie" class="galerie-image">
+            </a>
+            {% else %}
+            <img src="{{ block.settings.image | image_url: width: 800 }}" alt="Image galerie" class="galerie-image">
+            {% endif %}
+          
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('.tylt_video_photo');
+    if (sections.length > 0) {
+      // On prend la dernière section
+      const lastSection = sections[sections.length - 1];
+      lastSection.style.paddingBottom = '10px'; // ta valeur padding bottom
+    }
+  });
+</script>

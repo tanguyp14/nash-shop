@@ -1,0 +1,627 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "hats_slide_responsive_aEWRmR": {
+      "type": "hats-slide_responsive",
+      "blocks": {
+        "slide_CWXfhY": {
+          "type": "slide",
+          "settings": {
+            "date_picker": "12-24-2022",
+            "image_slide_desk": "shopify://shop_images/BANNIERE_DESK_5.webp",
+            "image_slide_mobile": "shopify://shop_images/BANNIERE_MOBILE_5.webp",
+            "link_slide": "",
+            "credit_name": "",
+            "credit_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_CWXfhY"
+      ],
+      "name": "TYLT - Slides",
+      "settings": {
+        "margin-top": 0
+      }
+    },
+    "hats_multi_marquee_EAE7Mx": {
+      "type": "hats-multi-marquee",
+      "blocks": {
+        "text_6EVWpB": {
+          "type": "text",
+          "settings": {
+            "text": "Créateurs - Artisant - Gastronomie - Activites - Brocantes - Exposition",
+            "rotate": 0,
+            "top": 0,
+            "typo_size": 4,
+            "typo_text": "'Poppins', sans-serif",
+            "typo_text_transform": "uppercase",
+            "color": "#ffffff",
+            "font_style": "italic",
+            "typo_text_weight": 800,
+            "bg_color": "#4398e5"
+          }
+        },
+        "text_jewmTk": {
+          "type": "text",
+          "settings": {
+            "text": "クリエイター - 職人 - 美食 - アクティビティ - ブロカント（蚤の市） - 展示会",
+            "rotate": 0,
+            "top": 1,
+            "typo_size": 3,
+            "typo_text": "'Poppins', sans-serif",
+            "typo_text_transform": "uppercase",
+            "color": "#ffffff",
+            "font_style": "",
+            "typo_text_weight": 300,
+            "bg_color": "#efb303"
+          }
+        }
+      },
+      "block_order": [
+        "text_6EVWpB",
+        "text_jewmTk"
+      ],
+      "name": "Multi-Marquee",
+      "settings": {
+        "margin-top": 0,
+        "height": 9
+      }
+    },
+    "tylt_movable_solo_elements_AKLGNf": {
+      "type": "tylt-movable-solo-elements",
+      "name": "TYLT - Movable Solo element",
+      "settings": {
+        "tylt_class": "tylt-matsuri-lanterne-r1",
+        "button_link": "",
+        "tylt_aos": "zoom-in",
+        "icon": "shopify://shop_images/LANTERNE_1.webp"
+      }
+    },
+    "tylt_movable_solo_elements_eG8nQe": {
+      "type": "tylt-movable-solo-elements",
+      "name": "TYLT - Movable Solo element",
+      "settings": {
+        "tylt_class": "tylt-matsuri-lanterne-b1",
+        "button_link": "",
+        "tylt_aos": "zoom-in",
+        "icon": "shopify://shop_images/LANTERNE_2.webp"
+      }
+    },
+    "tylt_movable_solo_elements_fREGxT": {
+      "type": "tylt-movable-solo-elements",
+      "name": "TYLT - Movable Solo element",
+      "settings": {
+        "tylt_class": "tylt-matsuri-lanterne-r2",
+        "button_link": "",
+        "tylt_aos": "zoom-in",
+        "icon": "shopify://shop_images/LANTERNE_1.webp"
+      }
+    },
+    "tylt_movable_solo_elements_6fzHbQ": {
+      "type": "tylt-movable-solo-elements",
+      "name": "TYLT - Movable Solo element",
+      "settings": {
+        "tylt_class": "tylt-matsuri-lanterne-b2",
+        "button_link": "",
+        "tylt_aos": "zoom-in",
+        "icon": "shopify://shop_images/LANTERNE_2.webp"
+      }
+    },
+    "tylt_movable_solo_elements_VVryhG": {
+      "type": "tylt-movable-solo-elements",
+      "name": "TYLT - Movable Solo element",
+      "settings": {
+        "tylt_class": "tylt-matsuri-lanterne-r3",
+        "button_link": "",
+        "tylt_aos": "zoom-in",
+        "icon": "shopify://shop_images/LANTERNE_1.webp"
+      }
+    },
+    "tylt_movable_solo_elements_eywU8g": {
+      "type": "tylt-movable-solo-elements",
+      "name": "TYLT - Movable Solo element",
+      "settings": {
+        "tylt_class": "tylt-matsuri-lanterne-b3",
+        "button_link": "",
+        "tylt_aos": "zoom-in",
+        "icon": "shopify://shop_images/LANTERNE_2.webp"
+      }
+    },
+    "tylt_text_image_link_7rgyyV": {
+      "type": "tylt-text-image-link",
+      "custom_css": [
+        ".tylt_text_img_link {padding-top: 120px;}"
+      ],
+      "name": "TYLT - TextImgLink",
+      "settings": {
+        "paragraph": "<h3><strong>Le Paiheme Studio lance la première édition du Summer Matsuri à la Cité Fertile – 26 & 27 juillet 2025</strong></h3><p>Le <strong>Summer Matsuri</strong> marque le lancement d’un tout nouvel événement culturel imaginé par <strong>Paiheme Studio</strong>, illustrateur reconnu pour son univers japonais vintage. Après le succès d’un premier format plus intimiste, cette première édition en grand format s’installe à la <strong>Cité Fertile de Pantin</strong>, les <strong>26 et 27 juillet 2025</strong>, pour un week-end festif, artistique et immersif.</p><p>Ce festival unique en son genre réunira <strong>plus de 30 artistes</strong> venus de toute la France, autour d’une programmation riche mêlant <strong>illustration, artisanat, gastronomie et culture japonaise</strong>.</p><h3>Au programme :</h3><ul><li><strong>Expositions exclusives</strong> de créations originales signées Paiheme Studio et collaborations<br/></li><li><strong>Stands de créateurs et d’artisans</strong> aux influences japonaises<br/></li><li>Une <strong>brocante japonaise</strong> organisée par <strong>Koji Japon</strong><br/></li><li><strong>Ateliers participatifs</strong>, animations en plein air, activités créatives pour tous les âges<br/></li><li>Et bien sûr, une sélection pointue de <strong>street food et de spécialités nippones</strong> à savourer sur place<br/></li></ul><p>Entre <strong>art, culture, découverte et convivialité</strong>, le Summer Matsuri s’inspire des festivals japonais traditionnels pour offrir un moment chaleureux, accessible et inspirant à toutes et tous.</p>",
+        "background": "shopify://shop_images/POST_INSTA.jpg",
+        "reseau": "tiktok",
+        "button_text": "Suis l'avancement du projet",
+        "button_link": "https://www.tiktok.com/@paiheme"
+      }
+    },
+    "tylt_movable_solo_elements_afRp7J": {
+      "type": "tylt-movable-solo-elements",
+      "name": "TYLT - Movable Solo element",
+      "settings": {
+        "tylt_class": "tylt-matsuri-kanji",
+        "button_link": "",
+        "tylt_aos": "zoom-out",
+        "icon": "shopify://shop_images/KANJI.webp"
+      }
+    },
+    "hats_slide_responsive_TX8qMH": {
+      "type": "hats-slide_responsive",
+      "blocks": {
+        "slide_7Bqtr6": {
+          "type": "slide",
+          "settings": {
+            "date_picker": "12-24-2022",
+            "image_slide_desk": "shopify://shop_images/Grand_Yokocho-13.webp",
+            "image_slide_mobile": "shopify://shop_images/Grand_Yokocho-13.webp",
+            "link_slide": "",
+            "credit_name": "Sekai of kangae",
+            "credit_link": "https://www.instagram.com/sekaiofkangae/?hl=fr"
+          }
+        },
+        "slide_4xDzUt": {
+          "type": "slide",
+          "settings": {
+            "date_picker": "12-24-2022",
+            "image_slide_desk": "shopify://shop_images/Grand_Yokocho-08.webp",
+            "image_slide_mobile": "shopify://shop_images/Grand_Yokocho-08.webp",
+            "link_slide": "",
+            "credit_name": "Sekai of kangae",
+            "credit_link": "https://www.instagram.com/sekaiofkangae/?hl=fr"
+          }
+        },
+        "slide_QMyYbT": {
+          "type": "slide",
+          "settings": {
+            "date_picker": "12-24-2022",
+            "image_slide_desk": "shopify://shop_images/Grand_Yokocho-07.webp",
+            "image_slide_mobile": "shopify://shop_images/Grand_Yokocho-07.webp",
+            "link_slide": "",
+            "credit_name": "Sekai of kangae",
+            "credit_link": "https://www.instagram.com/sekaiofkangae/?hl=fr"
+          }
+        },
+        "slide_pWEJ8L": {
+          "type": "slide",
+          "settings": {
+            "date_picker": "12-24-2022",
+            "image_slide_desk": "shopify://shop_images/Grand_Yokocho-02.webp",
+            "image_slide_mobile": "shopify://shop_images/Grand_Yokocho-02.webp",
+            "link_slide": "",
+            "credit_name": "Sekai of kangae",
+            "credit_link": "https://www.instagram.com/sekaiofkangae/?hl=fr"
+          }
+        },
+        "slide_wDnJTh": {
+          "type": "slide",
+          "settings": {
+            "date_picker": "12-24-2022",
+            "image_slide_desk": "shopify://shop_images/Grand_Yokocho-04.webp",
+            "image_slide_mobile": "shopify://shop_images/Grand_Yokocho-04.webp",
+            "link_slide": "",
+            "credit_name": "Sekai of kangae",
+            "credit_link": "https://www.instagram.com/sekaiofkangae/?hl=fr"
+          }
+        }
+      },
+      "block_order": [
+        "slide_7Bqtr6",
+        "slide_4xDzUt",
+        "slide_QMyYbT",
+        "slide_pWEJ8L",
+        "slide_wDnJTh"
+      ],
+      "name": "TYLT - Slides",
+      "settings": {
+        "margin-top": 0
+      }
+    },
+    "tylt_matsuri_artiste_dnXNcq": {
+      "type": "tylt-matsuri-artiste",
+      "blocks": {
+        "text_rVAXeX": {
+          "type": "text",
+          "settings": {
+            "text": "Batiste Perron",
+            "artiste_image": "shopify://shop_images/batisteperon.jpg",
+            "artiste_link": "https://www.instagram.com/batisteperrondesign/?hl=fr",
+            "categorie": "Artiste"
+          }
+        },
+        "text_kAKpPC": {
+          "type": "text",
+          "settings": {
+            "text": "Clémentine Chaput",
+            "artiste_image": "shopify://shop_images/clementinechapu.jpg",
+            "artiste_link": "https://www.instagram.com/clementine.chaput/",
+            "categorie": "Artiste"
+          }
+        },
+        "text_nwAXrY": {
+          "type": "text",
+          "settings": {
+            "text": "Edokai",
+            "artiste_image": "shopify://shop_images/edokai.jpg",
+            "artiste_link": "https://www.instagram.com/edokai__/",
+            "categorie": "Artisant"
+          }
+        },
+        "text_VDm83A": {
+          "type": "text",
+          "settings": {
+            "text": "Momonaade",
+            "artiste_image": "shopify://shop_images/momo.jpg",
+            "artiste_link": "https://www.instagram.com/momonaade/?hl=fr",
+            "categorie": "Artiste"
+          }
+        },
+        "text_LVRdMy": {
+          "type": "text",
+          "settings": {
+            "text": "Kōseki Savon",
+            "artiste_image": "shopify://shop_images/kosekisaovn.jpg",
+            "artiste_link": "https://www.instagram.com/koseki_savon/",
+            "categorie": "Artisant"
+          }
+        },
+        "text_QEmWqG": {
+          "type": "text",
+          "settings": {
+            "text": "Aurélie fiolet",
+            "artiste_image": "shopify://shop_images/aureliorigami.jpg",
+            "artiste_link": "https://www.instagram.com/origami_by_aurelie/?locale=ru&hl=am-et",
+            "categorie": "Artiste"
+          }
+        },
+        "text_6XE6Jw": {
+          "type": "text",
+          "settings": {
+            "text": "Madame Haori",
+            "artiste_image": "shopify://shop_images/458297946_1857668908089647_3303547830687113084_n.jpg",
+            "artiste_link": "https://www.instagram.com/madamehaori/?hl=fr",
+            "categorie": "Artisant"
+          }
+        },
+        "text_4azUqi": {
+          "type": "text",
+          "settings": {
+            "text": "Kogei",
+            "artiste_image": "shopify://shop_images/170207536_146385807403972_2592900457693098204_n.jpg",
+            "artiste_link": "https://www.instagram.com/kogei.shop/?hl=fr",
+            "categorie": "Artisant"
+          }
+        },
+        "text_N9iGiK": {
+          "type": "text",
+          "settings": {
+            "text": "Arual",
+            "artiste_image": "shopify://shop_images/arual.jpg",
+            "artiste_link": "https://www.instagram.com/arual_peyrt/",
+            "categorie": "Artiste"
+          }
+        },
+        "text_8MzzFc": {
+          "type": "text",
+          "settings": {
+            "text": "Donjon & ...",
+            "artiste_image": "shopify://shop_images/donjon.jpg",
+            "artiste_link": "https://www.instagram.com/donjon.procrastination/",
+            "categorie": "Artiste"
+          }
+        },
+        "text_LhrY3y": {
+          "type": "text",
+          "settings": {
+            "text": "Amazaké Ya",
+            "artiste_image": "shopify://shop_images/285403159_560332452157935_1841945427215649050_n.jpg",
+            "artiste_link": "https://www.instagram.com/amazake_ya/",
+            "categorie": "Gastronomie"
+          }
+        },
+        "text_DYz3Yc": {
+          "type": "text",
+          "settings": {
+            "text": "Japanese Linocut",
+            "artiste_image": "shopify://shop_images/japlino.jpg",
+            "artiste_link": "https://www.instagram.com/japanese.linocut/",
+            "categorie": "Artiste"
+          }
+        },
+        "text_j8Ltga": {
+          "type": "text",
+          "settings": {
+            "text": "Studio Bewan",
+            "artiste_image": "shopify://shop_images/studiobewan.jpg",
+            "artiste_link": "https://www.instagram.com/studiobewan/?hl=fr",
+            "categorie": "Artiste"
+          }
+        },
+        "text_mhekpc": {
+          "type": "text",
+          "settings": {
+            "text": "Yatai",
+            "artiste_image": "shopify://shop_images/yataifran.jpg",
+            "artiste_link": "https://www.instagram.com/yatai.france/?hl=fr",
+            "categorie": "Gastronomie"
+          }
+        },
+        "text_4Xwd9K": {
+          "type": "text",
+          "settings": {
+            "text": "Shôbi Thés",
+            "artiste_image": "shopify://shop_images/400178456_733827378596816_6024160174838785305_n.jpg",
+            "artiste_link": "https://www.instagram.com/shobi_select/",
+            "categorie": "Gastronomie"
+          }
+        },
+        "text_twAPdt": {
+          "type": "text",
+          "settings": {
+            "text": "Leya Gribouille",
+            "artiste_image": "shopify://shop_images/leya.jpg",
+            "artiste_link": "https://www.instagram.com/leya_gribouille/?hl=fr",
+            "categorie": "Artiste"
+          }
+        },
+        "text_xLdecj": {
+          "type": "text",
+          "settings": {
+            "text": "Sekai of kangae",
+            "artiste_image": "shopify://shop_images/seka.jpg",
+            "artiste_link": "https://www.instagram.com/sekaiofkangae/?hl=fr",
+            "categorie": "Artiste"
+          }
+        },
+        "text_hJMjT8": {
+          "type": "text",
+          "settings": {
+            "text": "Notori",
+            "artiste_image": "shopify://shop_images/noto.jpg",
+            "artiste_link": "https://www.instagram.com/notoristudio/",
+            "categorie": "Artiste"
+          }
+        },
+        "text_PFxqF9": {
+          "type": "text",
+          "settings": {
+            "text": "Adrien Lopes",
+            "artiste_image": "shopify://shop_images/adri.jpg",
+            "artiste_link": "https://www.instagram.com/adrienlopes/?hl=fr",
+            "categorie": "Artiste"
+          }
+        },
+        "text_KtFzft": {
+          "type": "text",
+          "settings": {
+            "text": "Oh! Mochi",
+            "artiste_image": "shopify://shop_images/mochi.jpg",
+            "artiste_link": "https://www.instagram.com/oh_mochi.fr/?hl=fr",
+            "categorie": "Gastronomie"
+          }
+        },
+        "text_CUzD3a": {
+          "type": "text",
+          "settings": {
+            "text": "Jinchan",
+            "artiste_image": "shopify://shop_images/491443895_18118507279457291_6529180255355842377_n.jpg",
+            "artiste_link": "https://www.instagram.com/jinchanizakaya/?hl=fr",
+            "categorie": "Gastronomie"
+          }
+        },
+        "text_EeYdtt": {
+          "type": "text",
+          "settings": {
+            "text": "Burokanto",
+            "artiste_image": "shopify://shop_images/borok.jpg",
+            "artiste_link": "https://www.instagram.com/burokanto/",
+            "categorie": "Artiste"
+          }
+        },
+        "text_3q789Y": {
+          "type": "text",
+          "settings": {
+            "text": "Vivizama",
+            "artiste_image": "shopify://shop_images/viviz.jpg",
+            "artiste_link": "https://www.instagram.com/vivizama/?hl=fr",
+            "categorie": "Artiste"
+          }
+        },
+        "text_Kpt7cQ": {
+          "type": "text",
+          "settings": {
+            "text": "Lea Coiffey",
+            "artiste_image": "shopify://shop_images/leacoi.jpg",
+            "artiste_link": "https://www.instagram.com/lea_cffy/?hl=fr",
+            "categorie": "Artiste"
+          }
+        },
+        "text_PLQy8p": {
+          "type": "text",
+          "settings": {
+            "text": "Couleur Pastèque",
+            "artiste_image": "shopify://shop_images/pastis.jpg",
+            "artiste_link": "https://www.instagram.com/couleur.pasteque/?hl=fr",
+            "categorie": "Artisant"
+          }
+        },
+        "text_YEBwQw": {
+          "type": "text",
+          "settings": {
+            "text": "Nogi San",
+            "artiste_image": "shopify://shop_images/nogi.jpg",
+            "artiste_link": "https://www.instagram.com/nogi.san/?hl=fr",
+            "categorie": "Artiste"
+          }
+        },
+        "text_CMJtFW": {
+          "type": "text",
+          "settings": {
+            "text": "Tissus Papi",
+            "artiste_image": "shopify://shop_images/papi.jpg",
+            "artiste_link": "https://www.instagram.com/tissuspapi/?hl=fr",
+            "categorie": "Artisant"
+          }
+        },
+        "text_zN8Cmx": {
+          "type": "text",
+          "settings": {
+            "text": "Adeline Klam",
+            "artiste_image": "shopify://shop_images/adeline.jpg",
+            "artiste_link": "https://www.instagram.com/adelineklam/?hl=fr",
+            "categorie": "Artisant"
+          }
+        },
+        "text_QWUGrq": {
+          "type": "text",
+          "settings": {
+            "text": "Rodolphe Miez",
+            "artiste_image": "shopify://shop_images/rodo.jpg",
+            "artiste_link": "https://www.instagram.com/rodolphemiez/",
+            "categorie": "Artiste"
+          }
+        },
+        "text_GienBB": {
+          "type": "text",
+          "settings": {
+            "text": "Victor Dermo",
+            "artiste_image": "shopify://shop_images/vic.jpg",
+            "artiste_link": "https://www.instagram.com/victordermo/",
+            "categorie": "Artiste"
+          }
+        },
+        "text_nn6rrn": {
+          "type": "text",
+          "settings": {
+            "text": "26 rue froide",
+            "artiste_image": "shopify://shop_images/ruefroide.jpg",
+            "artiste_link": "https://www.instagram.com/26ruefroide/?hl=fr",
+            "categorie": "Artisant"
+          }
+        },
+        "text_YNJcmC": {
+          "type": "text",
+          "settings": {
+            "text": "Paiheme Books",
+            "artiste_image": "shopify://shop_images/LOGO_PAIHEME_STUDIO-2.png",
+            "artiste_link": "https://www.instagram.com/paiheme/?hl=fr",
+            "categorie": "Artiste"
+          }
+        },
+        "text_GiAtPJ": {
+          "type": "text",
+          "settings": {
+            "text": "Poulpi Kun",
+            "artiste_image": "shopify://shop_images/poul.jpg",
+            "artiste_link": "https://www.instagram.com/poulpi.kun/",
+            "categorie": "Artiste"
+          }
+        }
+      },
+      "block_order": [
+        "text_rVAXeX",
+        "text_kAKpPC",
+        "text_nwAXrY",
+        "text_VDm83A",
+        "text_LVRdMy",
+        "text_QEmWqG",
+        "text_6XE6Jw",
+        "text_4azUqi",
+        "text_N9iGiK",
+        "text_8MzzFc",
+        "text_LhrY3y",
+        "text_DYz3Yc",
+        "text_j8Ltga",
+        "text_mhekpc",
+        "text_4Xwd9K",
+        "text_twAPdt",
+        "text_xLdecj",
+        "text_hJMjT8",
+        "text_PFxqF9",
+        "text_KtFzft",
+        "text_CUzD3a",
+        "text_EeYdtt",
+        "text_3q789Y",
+        "text_Kpt7cQ",
+        "text_PLQy8p",
+        "text_YEBwQw",
+        "text_CMJtFW",
+        "text_zN8Cmx",
+        "text_QWUGrq",
+        "text_GienBB",
+        "text_nn6rrn",
+        "text_YNJcmC",
+        "text_GiAtPJ"
+      ],
+      "custom_css": [
+        ".tylt_matsuri_artiste {padding-top: 50px;}"
+      ],
+      "name": "TYLT - Matsuri Artiste",
+      "settings": {
+        "titre": "Les artistes",
+        "paragraph": "<p>Illustrateurs, créateurs et artisans réunis pour une édition unique du Summer Matsuri.</p>"
+      }
+    },
+    "hats_slide_responsive_zDPqDE": {
+      "type": "hats-slide_responsive",
+      "blocks": {
+        "slide_ARNjTy": {
+          "type": "slide",
+          "settings": {
+            "date_picker": "12-24-2022",
+            "image_slide_desk": "shopify://shop_images/DAMIER.webp",
+            "image_slide_mobile": "shopify://shop_images/DAMIER.webp",
+            "link_slide": "",
+            "credit_name": "",
+            "credit_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_ARNjTy"
+      ],
+      "name": "TYLT - Slides",
+      "settings": {
+        "margin-top": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hats_slide_responsive_aEWRmR",
+    "hats_multi_marquee_EAE7Mx",
+    "tylt_movable_solo_elements_AKLGNf",
+    "tylt_movable_solo_elements_eG8nQe",
+    "tylt_movable_solo_elements_fREGxT",
+    "tylt_movable_solo_elements_6fzHbQ",
+    "tylt_movable_solo_elements_VVryhG",
+    "tylt_movable_solo_elements_eywU8g",
+    "tylt_text_image_link_7rgyyV",
+    "tylt_movable_solo_elements_afRp7J",
+    "hats_slide_responsive_TX8qMH",
+    "tylt_matsuri_artiste_dnXNcq",
+    "hats_slide_responsive_zDPqDE"
+  ]
+}

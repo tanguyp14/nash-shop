@@ -1,0 +1,32 @@
+{% schema %}
+{
+  "name": "STOREDECKS - Bottom",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Buissons",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Buisson"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "STOREDECKS - Bottom"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="hats_storedecks_bottom">
+  <div class="hats_storedecks_bottom__container">
+    {% for block in section.blocks %}
+        <span class="hats_storedecks_bottom__container__item" style="background-image:url('{{ block.settings.icon | image_url }}')"></span>
+    {% endfor %}
+  </div>
+</section>

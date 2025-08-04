@@ -1,0 +1,59 @@
+{% schema %}
+{
+  "name": "TYLT - EndJules",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "Zone de texte"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_one",
+      "label": "Images One"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_two",
+      "label": "Images Two"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_tri",
+      "label": "Images Tri"
+    },
+    {
+      "type": "image_picker",
+      "id": "comp_image_one",
+      "label": "Teeshirt"
+    }
+  ],
+  "presets": [
+    {
+      "name": "TYLT - EndJules"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="tylt_end_jules">
+  <div class="tylt_end_jules__container">
+    <span class="tylt_end_jules__container__item one">
+      <span class="tylt_end_jules__container__item__image" style="background-image:url('{{ section.settings.image_one | image_url }}')">
+      </span>
+    </span>
+    <span class="tylt_end_jules__container__item two">
+      <span class="tylt_end_jules__container__item__image" style="background-image:url('{{ section.settings.image_two | image_url }}')">
+      </span>
+    </span>
+    <span class="tylt_end_jules__container__item tri">
+      <span class="tylt_end_jules__container__item__image" style="background-image:url('{{ section.settings.image_tri | image_url }}')">
+      </span>
+    </span>
+    <span class="tylt_end_jules__container__item tee">
+      <span class="tylt_end_jules__container__item__image" style="background-image:url('{{ section.settings.comp_image_one | image_url }}')">
+      </span>
+    </span>
+    <span class="tylt_end_jules__container__item text">{{ section.settings.paragraph }}</span>
+  </div>
+</section>

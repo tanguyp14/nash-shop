@@ -1,0 +1,171 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "hats_slide_responsive_F8HgRq": {
+      "type": "hats-slide_responsive",
+      "blocks": {
+        "slide_LV3dTn": {
+          "type": "slide",
+          "settings": {
+            "date_picker": "12-24-2022",
+            "image_slide_desk": "shopify://shop_images/BANNIERE_DESK.webp",
+            "image_slide_mobile": "shopify://shop_images/BANNIERE_MOBILE.webp",
+            "link_slide": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_LV3dTn"
+      ],
+      "custom_css": [],
+      "name": "TYLT - Slides",
+      "settings": {
+        "margin-top": 0
+      }
+    },
+    "tylt_movable_solo_elements_G6zaDd": {
+      "type": "tylt-movable-solo-elements",
+      "name": "TYLT - Movable Solo element",
+      "settings": {
+        "tylt_class": "tylt-fdp-ramune",
+        "button_link": "",
+        "tylt_aos": "fade-right",
+        "icon": "shopify://shop_images/RAMUNE_4370dab2-6b02-4754-ad9a-c4eecb1e8538.webp"
+      }
+    },
+    "featured_collection_WqCigT": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Fête des supers Papas !",
+        "icon_collec": "shopify://shop_images/best-seller.svg",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "fete-des-peres",
+        "products_to_show": 24,
+        "columns_desktop": 6,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "tylt_movable_solo_elements_dDrKew": {
+      "type": "tylt-movable-solo-elements",
+      "name": "TYLT - Movable Solo element",
+      "settings": {
+        "tylt_class": "tylt-fdp-team",
+        "button_link": "",
+        "tylt_aos": "fade-right",
+        "icon": "shopify://shop_images/YOKAITEAM.webp"
+      }
+    },
+    "hats_multi_marquee_CMGrkB": {
+      "type": "hats-multi-marquee",
+      "blocks": {
+        "text_hR6nJ7": {
+          "type": "text",
+          "settings": {
+            "text": "Fête des super papas - Des cadeaux qui claquent",
+            "rotate": 0,
+            "top": 0,
+            "typo_size": 4,
+            "typo_text": "'Poppins', sans-serif",
+            "typo_text_transform": "uppercase",
+            "color": "#0a2c9e",
+            "font_style": "italic",
+            "typo_text_weight": 800,
+            "bg_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "text_hR6nJ7"
+      ],
+      "name": "Multi-Marquee",
+      "settings": {
+        "margin-top": 0,
+        "height": 4
+      }
+    },
+    "tylt_movable_solo_elements_TKb49P": {
+      "type": "tylt-movable-solo-elements",
+      "name": "TYLT - Movable Solo element",
+      "settings": {
+        "tylt_class": "tylt-fdp-tori",
+        "button_link": "",
+        "tylt_aos": "fade-left",
+        "icon": "shopify://shop_images/TORI.webp"
+      }
+    },
+    "featured_collection_TqWrJB": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Pour le roi du barbecue",
+        "icon_collec": "shopify://shop_images/best-seller.svg",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "casquettes",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hats_slide_responsive_F8HgRq",
+    "tylt_movable_solo_elements_G6zaDd",
+    "featured_collection_WqCigT",
+    "tylt_movable_solo_elements_dDrKew",
+    "hats_multi_marquee_CMGrkB",
+    "tylt_movable_solo_elements_TKb49P",
+    "featured_collection_TqWrJB"
+  ]
+}

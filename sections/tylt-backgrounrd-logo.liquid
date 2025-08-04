@@ -1,0 +1,56 @@
+{% schema %}
+{
+  "name": "TYLT - Background Logo",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Images background"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "icon",
+      "name": "Icon + Texte",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Texte à afficher"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo droite"
+        },
+        {
+          "type": "text",
+          "id": "sous_text",
+          "label": "Sous texte"
+        },
+      ],
+    }
+  ],
+  "presets": [
+    {
+      "name": "TYLT - Background Logo"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="tylt_background_logo" style="background-image:url('{{ section.settings.image | image_url }}')">
+  <span class="tylt_background_logo__op"></span>
+  <div class="tylt_background_logo__grid">
+    {% assign delay = 0 %}
+    {% for block in section.blocks %}
+      <div data-aos="fade-up" data-aos-delay="{{ delay }}" class="tylt_background_logo__grid__item">
+        <span class="tylt_background_logo__grid__item_logo"
+          style="background-image:url('{{ block.settings.logo | image_url }}')"></span>
+          <h4>{{ block.settings.text }}</h4>
+          <p>{{ block.settings.sous_text }}</p>
+      </div>
+      {% assign delay = delay | plus: 200 %}
+    {% endfor %}
+  </div>
+</section>

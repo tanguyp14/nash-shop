@@ -1,0 +1,101 @@
+{% if product.tags contains 'Pack' %}
+  <div style="display: none;" id="variant-mapping"></div>
+{% endif %}
+{% if product.tags contains 'Carte postal' %}
+  {% assign related_product = all_products['cadre-bois-naturel-10x15cm'] %}
+  {% assign variant = related_product.variants.first %}
+  <div data-aos="fade-left" data-aos-delay="200" id="variant-mapping">
+    <div class="hats-upsell-product visible">
+      <h3>{{ related_product.title }}</h3>
+      <p>+ {{ variant.price | money }}</p>
+      {% render 'buy-buttons',
+        block: block,
+        product: related_product,
+        product_form_id: related_product.id,
+        section_id: section.id,
+        show_pickup_availability: true
+      %}
+    </div>
+  </div>
+{% endif %}
+{% unless product.tags contains "Pack" %}
+{% if product.tags contains 'Print' %}
+  {% assign variantToProductMap = '30X40:cadre-bois-naturel-30x40cm,30x40cm:cadre-bois-naturel-30x40cm,30x40:cadre-bois-naturel-30x40cm,30 x 40cm:cadre-bois-naturel-30x40cm,30X40cm:cadre-bois-naturel-30x40cm,30 x 40:cadre-bois-naturel-30x40cm,30 x40cm:cadre-bois-naturel-30x40cm,30x 40cm:cadre-bois-naturel-30x40cm,30 x40:cadre-bois-naturel-30x40cm,30x 40:cadre-bois-naturel-30x40cm,30x40 cm:cadre-bois-naturel-30x40cm,30 x 40 cm:cadre-bois-naturel-30x40cm,30x40cm avec Dorure:cadre-bois-naturel-30x40cm,30X30:cadre-bois-naturel-30x30cm,30x30:cadre-bois-naturel-30x30cm,30x30cm:cadre-bois-naturel-30x30cm,30 x 30cm:cadre-bois-naturel-30x30cm,30X30cm:cadre-bois-naturel-30x30cm,30 x 30:cadre-bois-naturel-30x30cm,30x 30cm:cadre-bois-naturel-30x30cm,30 x30cm:cadre-bois-naturel-30x30cm,30x 30:cadre-bois-naturel-30x30cm,30 x30:cadre-bois-naturel-30x30cm,30x30 cm:cadre-bois-naturel-30x30cm,30 x 30 cm:cadre-bois-naturel-30x30cm,50x70cm:cadre-bois-naturel-50x70cm,50X70:cadre-bois-naturel-50x70cm,50 x 70cm:cadre-bois-naturel-50x70cm,50X70cm:cadre-bois-naturel-50x70cm,50 x 70:cadre-bois-naturel-50x70cm,50 x70cm:cadre-bois-naturel-50x70cm,50x 70cm:cadre-bois-naturel-50x70cm,50x 70:cadre-bois-naturel-50x70cm,50 x70:cadre-bois-naturel-50x70cm,50x70 cm:cadre-bois-naturel-50x70cm,50 x 70 cm:cadre-bois-naturel-50x70cm'
+    | split: ','
+  %}
+
+  <div data-aos="fade-left" data-aos-delay="200" id="variant-mapping">
+    {% for variant in product.variants %}
+      {% assign mapped_value = 'Non trouvé' %}
+      {% assign matched_product_handle = '' %}
+
+      {% for pair in variantToProductMap %}
+        {% assign pair_split = pair | split: ':' %}
+        {% assign key = pair_split[0] %}
+        {% assign value = pair_split[1] %}
+
+        {% if key == variant.title %}
+          {% assign mapped_value = value %}
+          {% assign matched_product_handle = value %}
+        {% endif %}
+      {% endfor %}
+
+      {% if mapped_value != 'Non trouvé' %}
+        <div class="hats-upsell-product multiple" data-variant="{{ variant.title }}">
+          {% assign related_product = all_products[matched_product_handle] %}
+          {% if related_product %}
+            <h3>{{ related_product.title }}</h3>
+            <p>+ {{ related_product.price | money }}</p>
+
+            {% for related_variant in related_product.variants %}
+              {% render 'buy-buttons',
+                block: block,
+                product: related_product,
+                product_form_id: related_product.id,
+                section_id: section.id,
+                show_pickup_availability: true
+              %}
+            {% endfor %}
+
+          {% else %}
+            <p>Produit non trouvé</p>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      function updateVariantDisplay(selectedValue) {
+        // Cache tous les blocs produits
+        document.querySelectorAll('.hats-upsell-product').forEach((div) => {
+          div.classList.remove('visible');
+        });
+
+        // Affiche uniquement le bloc correspondant à la variante sélectionnée
+        const selectedProduct = document.querySelector(`.hats-upsell-product[data-variant="${selectedValue}"]`);
+        if (selectedProduct) {
+          selectedProduct.classList.add('visible');
+        }
+      }
+
+      function logSelectedVariant(event) {
+        if (event.target.matches('variant-selects fieldset input[type="radio"]')) {
+          updateVariantDisplay(event.target.value);
+        }
+      }
+
+      document.addEventListener('change', logSelectedVariant);
+
+      // Affiche la variante sélectionnée au chargement
+      setTimeout(() => {
+        const checkedInput = document.querySelector('variant-selects fieldset input[type="radio"]:checked');
+        if (checkedInput) {
+          updateVariantDisplay(checkedInput.value);
+        }
+      }, 500);
+    });
+    {% comment %} document.addEventListener('DOMContentLoaded', checkStock); {% endcomment %}
+  </script>
+{% endif %}
+{% endunless %}

@@ -1,0 +1,217 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hats_colored_line_tokyo_parade_pWbknP": {
+      "type": "hats-colored-line-tokyo-parade",
+      "settings": {
+        "line_color_1": "#722100",
+        "line_color_2": "#f8f1d8",
+        "line_color_3": "#e9c330",
+        "line_color_4": "#e7821c",
+        "line_color_5": "#d25016",
+        "margin-top": 0
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "tylt_complementary_6rAy4k": {
+          "type": "tylt-complementary",
+          "settings": {
+            "block_heading": "",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "portrait",
+            "enable_quick_add": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "tylt_custom_qtt_price_wCFDRN": {
+          "type": "tylt_custom_qtt_price",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "variant_picker",
+        "tylt_complementary_6rAy4k",
+        "description",
+        "tylt_custom_qtt_price_wCFDRN",
+        "buy_buttons"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "accent-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "hats_image_text_link_ML8p7N": {
+      "type": "hats-image_text_link",
+      "custom_css": [
+        "#hats_img_text {background-color: #fff8f0;}"
+      ],
+      "settings": {
+        "title": "Découvrez YugenLab",
+        "under_text": "Le shop qui a inspiré l'affiche",
+        "button_link": "https://yugenlab.com/collections/nouveautes",
+        "button_text": "Voir la boutique",
+        "image": "shopify://shop_images/yugenShop_2.webp",
+        "margin-top": 0
+      }
+    },
+    "hats_colored_line_tokyo_parade_jdQjte": {
+      "type": "hats-colored-line-tokyo-parade",
+      "settings": {
+        "line_color_1": "#722100",
+        "line_color_2": "#f8f1d8",
+        "line_color_3": "#e9c330",
+        "line_color_4": "#e7821c",
+        "line_color_5": "#d25016",
+        "margin-top": 0
+      }
+    },
+    "tylt_related_collection_3K84Rq": {
+      "type": "tylt-related-collection",
+      "name": "TYLT - Featured Collec",
+      "settings": {
+        "title": "Collection en vedette",
+        "icon_collec": "shopify://shop_images/best-seller.svg",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "products_to_show": 10,
+        "columns_desktop": 6,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "Autres produits que vous pourriez aimer ❤️",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "accent-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 24,
+        "padding_bottom": 60
+      }
+    },
+    "newsletter_iqEmAy": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_JKHiFR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Envie d'avoir des offres exclusives ?",
+            "heading_size": "h2"
+          }
+        },
+        "paragraph_zrwTaa": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Abonne-toi et reçois les dernières nouveautés en affiches !</p>"
+          }
+        },
+        "email_form_YVH6FM": {
+          "type": "email_form",
+          "settings": {
+            "tags_text_tylt": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_JKHiFR",
+        "paragraph_zrwTaa",
+        "email_form_YVH6FM"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "hats_colored_line_tokyo_parade_pWbknP",
+    "main",
+    "hats_image_text_link_ML8p7N",
+    "hats_colored_line_tokyo_parade_jdQjte",
+    "tylt_related_collection_3K84Rq",
+    "related-products",
+    "newsletter_iqEmAy"
+  ]
+}

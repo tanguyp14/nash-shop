@@ -1,0 +1,144 @@
+{% schema %}
+{
+  "name": "Free Shipping",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text_free_shipping",
+      "label": "Texte à afficher",
+      "default": "Free Shipping at"
+    },
+    {
+      "type": "number",
+      "id": "price_free_shipping",
+      "label": "Prix de la livraison gratuite",
+      "default": 55
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Couleur du texte",
+      "default": "#EFBA19"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Free Shipping"
+    }
+  ]
+}
+{% endschema %}
+
+<section id="hats_free_shipping">
+  <span id="free_shipping_message" class="text">
+    <div>
+      Tu es à <span class="color">{{ section.settings.price_free_shipping }}.00€</span> de la
+      <span class="color">livraison gratuite</span> {{ section.settings.text_free_shipping }}.
+    </div>
+  </span>
+</section>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Sélectionnez l'élément que vous souhaitez déplacer
+    var hatsFreeShipping = document.getElementById('hats_free_shipping');
+    
+    // Sélectionnez la destination (en-tête)
+    var sectionHeader = document.querySelector('.section-header');
+    
+    // Déplacez l'élément en premier
+    if (hatsFreeShipping && sectionHeader) {
+        sectionHeader.insertBefore(hatsFreeShipping, sectionHeader.firstChild);
+    }
+});
+// Fonction pour mettre à jour le message de livraison gratuite
+function updateFreeShippingMessage() {
+  fetch('/cart.js')
+    .then(response => response.json())
+    .then(cart => {
+      const threshold = {{ section.settings.price_free_shipping | json }};
+      const total = cart.total_price / 100; // total_price est en cents
+      const amountNeeded = (threshold - total).toFixed(2);
+
+      const messageElement = document.getElementById('free_shipping_message');
+
+      if (total >= threshold) {
+        messageElement.innerHTML = `
+          <div class="free">Félicitations 🎉🎉 ! Vous avez droit à la <span class="color">livraison gratuite</span> {{ section.settings.text_free_shipping }}.</div>`;
+      } else {
+        messageElement.innerHTML = `
+          <div>Tu es à <span class="color">${amountNeeded}€</span> de la <span class="color">livraison gratuite</span> {{ section.settings.text_free_shipping }}.</div>`;
+      }
+    })
+    .catch(error => console.error('Erreur lors de la récupération du panier:', error));
+}
+
+// Mettre à jour le message au chargement de la page
+document.addEventListener('DOMContentLoaded', updateFreeShippingMessage);
+
+// Fonction pour émettre un événement lorsque le panier est mis à jour
+function triggerCartUpdateEvent() {
+  const event = new Event('cart:updated');
+  document.dispatchEvent(event);
+}
+
+// Écouter les ajouts au panier et déclencher l'événement
+document.addEventListener('submit', function(event) {
+  const form = event.target;
+  if (form && form.action.includes('/cart/add')) {
+    event.preventDefault(); // Empêcher la soumission du formulaire par défaut
+
+    const formData = new FormData(form);
+
+    fetch('/cart/add.js', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => response.json())
+    .then(() => {
+      triggerCartUpdateEvent();
+    })
+    .catch(error => console.error('Erreur lors de l’ajout au panier:', error));
+  }
+});
+
+// Écouter les événements de modification des quantités du panier
+document.addEventListener('click', function(event) {
+  if (event.target.classList.contains('quantity__button')) {
+    setTimeout(() => {
+      updateFreeShippingMessage();
+    }, 1000); // Attendre un court instant pour permettre à l'API d'actualiser le panier
+  }
+});
+
+document.addEventListener('click', function(event) {
+  if (event.target.classList.contains('cart-remove-button')) {
+    setTimeout(() => {
+      updateFreeShippingMessage();
+    }, 1000); // Attendre un court instant pour permettre à l'API d'actualiser le panier
+  }
+});
+
+
+// Écouter les changements dans les champs de saisie de quantité
+document.addEventListener('change', function(event) {
+  if (event.target.classList.contains('quantity__input')) {
+    setTimeout(() => {
+      updateFreeShippingMessage();
+    }, 1000); // Attendre un court instant pour permettre à l'API d'actualiser le panier
+  }
+});
+
+// Mettre à jour le message lorsqu'un produit est retiré du panier (si applicable)
+document.addEventListener('cart:updated', updateFreeShippingMessage);
+</script>
+
+<style>
+  #hats_free_shipping .color{
+    color: {{ section.settings.color }};
+  }
+</style>

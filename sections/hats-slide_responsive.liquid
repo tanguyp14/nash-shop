@@ -1,0 +1,169 @@
+{% schema %}
+{
+  "name": "TYLT - Slides",
+  "settings": [
+    {
+      "type": "range",
+      "id": "margin-top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "vh",
+      "label": "Marge supérieure en % Hauteur",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "text",
+          "id": "date_picker",
+          "label": "Date de mise en ligne",
+          "default": "12-24-2022",
+          "info": "e.g. mm-dd-yyyy"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_slide_desk",
+          "label": "Image Desktop 1920x720"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_slide_mobile",
+          "label": "Image Mobile 900x900"
+        },
+        {
+          "type": "url",
+          "id": "link_slide",
+          "label": "Lien du produit/Collection"
+        },
+        {
+          "type": "text",
+          "id": "credit_name",
+          "label": "Crédit Photo"
+        },
+        {
+          "type": "url",
+          "id": "credit_link",
+          "label": "Lien Credit"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "TYLT - Slides"
+    }
+  ]
+}
+{% endschema %}
+
+{% assign today = 'now' | date: '%Y-%m-%d' %}
+
+<section id="hats_slides" style="margin-top:{{ section.settings.margin-top }}vh">
+  <div class="slideshow">
+    <div class="slideshow__slides desk" id="desk-{{ section.id }}">
+      {% for block in section.blocks %}
+        {% assign date_parts = block.settings.date_picker | split: '-' %}
+        {% assign block_date = date_parts[2]
+          | append: '-'
+          | append: date_parts[0]
+          | append: '-'
+          | append: date_parts[1]
+        %}
+        {% assign block_date = block_date | date: '%Y-%m-%d' %}
+        {% if block_date <= today %}
+          <div class="slideshow__slide">
+            {% if block.settings.link_slide %}
+              <a class="product_link" href="{{ block.settings.link_slide }}" alt="Voir le produit">
+                {% if block.settings.credit_link %}
+                  <a class="credit" href="{{ block.settings.credit_link }}" target="_blank" alt="Voir l'instagram">
+                    Crédit photo :&nbsp;{{- block.settings.credit_name -}}
+                  </a>
+                {% endif %}
+                <img src="{{ block.settings.image_slide_desk | image_url }}" alt="" width="100%" height="auto">
+              </a>
+            {% else %}
+              {% if block.settings.credit_link %}
+                <a class="credit" href="{{ block.settings.credit_link }}" target="_blank" alt="Voir l'instagram">
+                  Crédit photo :&nbsp;{{- block.settings.credit_name -}}
+                </a>
+              {% endif %}
+              <img src="{{ block.settings.image_slide_desk | image_url }}" alt="" width="100%" height="auto">
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="slideshow__slides mobile" id="mobile-{{ section.id }}">
+      {% for block in section.blocks %}
+        {% assign date_parts = block.settings.date_picker | split: '-' %}
+        {% assign block_date = date_parts[2]
+          | append: '-'
+          | append: date_parts[0]
+          | append: '-'
+          | append: date_parts[1]
+        %}
+        {% assign block_date = block_date | date: '%Y-%m-%d' %}
+        {% if block_date <= today %}
+          <div class="slideshow__slide">
+            {% if block.settings.link_slide %}
+              <a href="{{ block.settings.link_slide }}" alt="Voir le produit">
+                {% if block.settings.credit_link %}
+                  <a class="credit" href="{{ block.settings.credit_link }}" target="_blank" alt="Voir l'instagram">
+                    Crédit photo :&nbsp;{{- block.settings.credit_name -}}
+                  </a>
+                {% endif %}
+                <img
+                  src="{{ block.settings.image_slide_mobile | image_url }}"
+                  data-lazy="{{ block.settings.image_slide_mobile | image_url }}"
+                  alt=""
+                  width="100%"
+                  height="auto"
+                >
+              </a>
+            {% else %}
+              {% if block.settings.credit_link %}
+                <a class="credit" href="{{ block.settings.credit_link }}" target="_blank" alt="Voir l'instagram">
+                  Crédit photo :&nbsp;{{- block.settings.credit_name -}}
+                </a>
+              {% endif %}
+              <img
+                src="{{ block.settings.image_slide_mobile | image_url }}"
+                data-lazy="{{ block.settings.image_slide_mobile | image_url }}"
+                alt=""
+                width="100%"
+                height="auto"
+              >
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="pagination_slide {{ section.id }}"></div>
+  </div>
+</section>
+
+<script>
+  $(document).ready(function () {
+    $('#desk-{{ section.id }}, #mobile-{{ section.id }}')
+      .on('init', function () {
+        $(this).css('visibility', 'visible');
+      })
+      .slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        dots: true,
+        appendDots: $('.pagination_slide.{{ section.id }}'),
+        infinite: true,
+        speed: 300,
+        arrows: false,
+        lazyLoad: 'ondemand',
+      });
+  });
+</script>

@@ -1,0 +1,312 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "hats_slide_responsive_F8HgRq": {
+      "type": "hats-slide_responsive",
+      "blocks": {
+        "slide_LV3dTn": {
+          "type": "slide",
+          "settings": {
+            "date_picker": "12-24-2022",
+            "image_slide_desk": "shopify://shop_images/BANNIERE_SPRINGROOM.webp",
+            "image_slide_mobile": "shopify://shop_images/BANNIERE_SPRINGROOM.webp",
+            "link_slide": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_LV3dTn"
+      ],
+      "custom_css": [
+        ".slideshow .slick-slide img {background-color: transparent;}",
+        "#hats_slides {z-index: 6;}"
+      ],
+      "name": "TYLT - Slides",
+      "settings": {
+        "margin-top": 0
+      }
+    },
+    "tylt_movable_solo_elements_G6zaDd": {
+      "type": "tylt-movable-solo-elements",
+      "name": "TYLT - Movable Solo element",
+      "settings": {
+        "tylt_class": "tylt-spring-voiture",
+        "button_link": "",
+        "tylt_aos": "fade-right",
+        "icon": "shopify://shop_images/VOITURE.svg"
+      }
+    },
+    "hats_multi_marquee_yF49cK": {
+      "type": "hats-multi-marquee",
+      "blocks": {
+        "text_QW4DeD": {
+          "type": "text",
+          "settings": {
+            "text": "C'est le printemps !",
+            "rotate": 0,
+            "top": 0,
+            "typo_size": 5,
+            "typo_text": "'Anime', cursive;",
+            "typo_text_transform": "none",
+            "color": "#ffffff",
+            "font_style": "italic",
+            "typo_text_weight": 400,
+            "bg_color": "#131212"
+          }
+        }
+      },
+      "block_order": [
+        "text_QW4DeD"
+      ],
+      "custom_css": [
+        ".marquee_multi .text {margin-top: -5px;}"
+      ],
+      "name": "Multi-Marquee",
+      "settings": {
+        "margin-top": -6.8,
+        "height": 5
+      }
+    },
+    "featured_product_JVVhcf": {
+      "type": "featured-product",
+      "blocks": {
+        "title_nRhgjr": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "text_A8T8fn": {
+          "type": "text",
+          "settings": {
+            "text": "La chaleur d’un soir, le souffle du printemps. Une composition pour les interieurs calmes et sensibles.",
+            "text_style": "body"
+          }
+        },
+        "text_bzA9kX": {
+          "type": "text",
+          "settings": {
+            "text": "Paiheme",
+            "text_style": "body"
+          }
+        },
+        "variant_picker_MiUJ9H": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "tylt_complementary_P3iqzV": {
+          "type": "tylt-complementary",
+          "settings": {
+            "block_heading": "S’associe bien avec",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "portrait",
+            "enable_quick_add": false
+          }
+        },
+        "tylt_custom_qtt_price_ejYqcB": {
+          "type": "tylt_custom_qtt_price",
+          "settings": {}
+        },
+        "buy_buttons_GydqQ9": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "title_nRhgjr",
+        "text_A8T8fn",
+        "text_bzA9kX",
+        "variant_picker_MiUJ9H",
+        "tylt_complementary_P3iqzV",
+        "tylt_custom_qtt_price_ejYqcB",
+        "buy_buttons_GydqQ9"
+      ],
+      "custom_css": [
+        ".product__text:first-of-type {font-family: \"Anime\", cursive; font-size: 15px; line-height: 24px; transform: rotate(-2deg); color: black; max-width: 433px;}",
+        ".product__text:last-of-type {font-family: \"Anime\", cursive; font-size: 26px; line-height: 24px; margin-bottom: 20px; transform: rotate(-1deg); text-align: center; margin-left: 190px; color: orange;}",
+        ".grid--peek.slider .grid__item:first-of-type {margin-left: 0px !important;}"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "spring-room",
+        "color_scheme": "inverse",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 80,
+        "padding_bottom": 52
+      }
+    },
+    "tylt_movable_solo_elements_BArTJ9": {
+      "type": "tylt-movable-solo-elements",
+      "name": "TYLT - Movable Solo element",
+      "settings": {
+        "tylt_class": "tylt-spring-noodle",
+        "button_link": "",
+        "tylt_aos": "fade-up",
+        "icon": "shopify://shop_images/NOODLE.svg"
+      }
+    },
+    "tylt_movable_solo_elements_TKb49P": {
+      "type": "tylt-movable-solo-elements",
+      "name": "TYLT - Movable Solo element",
+      "settings": {
+        "tylt_class": "tylt-spring-tei",
+        "button_link": "",
+        "tylt_aos": "fade-left",
+        "icon": "shopify://shop_images/THEIERE.svg"
+      }
+    },
+    "featured_product_KPHK8W": {
+      "type": "featured-product",
+      "blocks": {
+        "text_mVRjXN": {
+          "type": "text",
+          "settings": {
+            "text": "Springroom",
+            "text_style": "uppercase"
+          }
+        },
+        "title_tFLrMy": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "tylt_custom_qtt_price_dyXFC3": {
+          "type": "tylt_custom_qtt_price",
+          "settings": {}
+        },
+        "buy_buttons_KDXQaH": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "text_mVRjXN",
+        "title_tFLrMy",
+        "tylt_custom_qtt_price_dyXFC3",
+        "buy_buttons_KDXQaH"
+      ],
+      "custom_css": [
+        ".featured-product {max-width: 1000px; margin: auto; margin-bottom: -10vw; z-index: 30; background-color: transparent;}",
+        ".featured-product li > div {background-color: transparent;}",
+        ".grid--peek.slider .grid__item:first-of-type {margin-left: 0px !important;}"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "springroom-totebag",
+        "color_scheme": "inverse",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "hats_slide_responsive_NYkiDh": {
+      "type": "hats-slide_responsive",
+      "blocks": {
+        "slide_YegLQ9": {
+          "type": "slide",
+          "settings": {
+            "date_picker": "12-24-2022",
+            "image_slide_desk": "shopify://shop_images/FOOTER_ELEMENTS.svg",
+            "image_slide_mobile": "shopify://shop_images/FOOTER_ELEMENTS.svg",
+            "link_slide": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_YegLQ9"
+      ],
+      "name": "TYLT - Slides",
+      "settings": {
+        "margin-top": 0
+      }
+    },
+    "hats_slide_responsive_LVaQTx": {
+      "type": "hats-slide_responsive",
+      "blocks": {
+        "slide_3WTkty": {
+          "type": "slide",
+          "settings": {
+            "date_picker": "12-24-2022",
+            "image_slide_desk": "shopify://shop_images/BANNIERE_BAS_DE_PAGE_2.webp",
+            "image_slide_mobile": "shopify://shop_images/BANNIERE_BAS_DE_PAGE_2.webp",
+            "link_slide": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_3WTkty"
+      ],
+      "name": "TYLT - Slides",
+      "settings": {
+        "margin-top": 0
+      }
+    },
+    "tylt_movable_solo_elements_krWqwE": {
+      "type": "tylt-movable-solo-elements",
+      "name": "TYLT - Movable Solo element",
+      "settings": {
+        "tylt_class": "tylt-spring-kyodai",
+        "button_link": "",
+        "tylt_aos": "fade-left",
+        "icon": "shopify://shop_images/IMPRIMEE_EN_FRANCE.svg"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hats_slide_responsive_F8HgRq",
+    "tylt_movable_solo_elements_G6zaDd",
+    "hats_multi_marquee_yF49cK",
+    "featured_product_JVVhcf",
+    "tylt_movable_solo_elements_BArTJ9",
+    "tylt_movable_solo_elements_TKb49P",
+    "featured_product_KPHK8W",
+    "hats_slide_responsive_NYkiDh",
+    "hats_slide_responsive_LVaQTx",
+    "tylt_movable_solo_elements_krWqwE"
+  ]
+}

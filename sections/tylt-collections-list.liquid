@@ -1,0 +1,76 @@
+{% schema %}
+{
+  "name": "TYLT - Collection List",
+  "settings": [
+    {
+      "type": "text",
+      "id": "csv_url",
+      "label": "URL du fichier CSV",
+      "default": "https://cdn.shopify.com/s/files/..."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection_list",
+      "name": "Collection",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "collection_image",
+          "label": "Image de la collection"
+        },
+        {
+          "type": "collection",
+          "id": "collection_item",
+          "label": "Collection",
+        },
+        {
+          "type": "text",
+          "id": "collection_title",
+          "label": "Titre de la collection",
+          "default": "Titre de la collection"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "TYLT - Collection List"
+    }
+  ]
+}
+{% endschema %}
+
+<section data-aos="fade-up" class="tylt-collections-list">
+    <div class="tylt-collections-list__container">
+      {% for block in section.blocks %}
+          <div class="tylt-collections-list item">
+            <a href="{{ block.settings.collection_item.url }}" alt="{{ block.settings.collection_item.title }}" class="linky_global"></a>
+            {% if block.settings.collection_image %}
+              <img src="{{ block.settings.collection_image | img_url: 'original' }}" alt="{{ block.settings.collection_item.title }}" class="item_image">
+            {% elsif block.settings.collection_item.featured_image %}
+              <img src="{{ block.settings.collection_item.featured_image | img_url: 'original' }}" alt="{{ block.settings.collection_item.title }}" class="item_image">
+            {% endif %}
+            <span><a href="{{ block.settings.collection_item.url }}" alt="{{ block.settings.collection_item.title }}" class="btn">{{ block.settings.collection_title }}</a></span>
+          </div>
+      {% endfor %}
+    </div>
+</section>
+
+<script>
+  document.querySelectorAll('.linky_global').forEach(function(link) {
+    link.addEventListener('mouseenter', function() {
+      var btn = link.parentElement.querySelector('.btn');
+      var img = link.parentElement.querySelector('.item_image');
+      if (btn) btn.classList.add('hover');
+      if (img) img.classList.add('hover');
+    });
+    link.addEventListener('mouseleave', function() {
+      var btn = link.parentElement.querySelector('.btn');
+      var img = link.parentElement.querySelector('.item_image');
+      if (btn) btn.classList.remove('hover');
+      if (img) img.classList.remove('hover');
+    });
+  });
+</script>

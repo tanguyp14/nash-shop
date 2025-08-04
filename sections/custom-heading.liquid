@@ -1,0 +1,29 @@
+{% schema %}
+{
+  "name": "Test de section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "test_text",
+      "label": "Heading Text",
+      "default": "Your Custom Heading Here"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Seulement pour le test"
+    }
+  ]
+}
+{% endschema %}
+
+<section id="custom-heading-section">
+  <h1>{{ section.settings.test_text }}</h1>
+</section>
+
+<style>
+  #custom-heading-section {
+    text-align: center; /* Center the text */
+    padding: 20px 0;
+  }
+</style>

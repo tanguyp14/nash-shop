@@ -1,0 +1,67 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hats_slide_responsive_RTa7Ja": {
+      "type": "hats-slide_responsive",
+      "blocks": {
+        "slide_EixbEi": {
+          "type": "slide",
+          "settings": {
+            "date_picker": "12-24-2022",
+            "image_slide_desk": "shopify://shop_images/DESK_133325cf-ad55-4392-ad60-a1fa3c4f3727.jpg",
+            "image_slide_mobile": "shopify://shop_images/MOBILE_40b8cf2f-3ed9-44a5-a142-f7455548f08e.jpg",
+            "link_slide": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_EixbEi"
+      ],
+      "settings": {
+        "margin-top": 0
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": true,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 36,
+        "columns_desktop": 4,
+        "color_scheme": "accent-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": false,
+        "filter_type": "drawer",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "hats_slide_responsive_RTa7Ja",
+    "banner",
+    "product-grid"
+  ]
+}

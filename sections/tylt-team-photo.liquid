@@ -1,0 +1,41 @@
+{% schema %}
+{
+  "name": "TYLT - Team Photo",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "Zone de texte"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "TYLT - Team Photo"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="tylt_team_photo">
+  <div class="tylt_team_photo__text">
+    <span data-aos="fade-right" class="tylt_team_photo__text__container">{{ section.settings.paragraph }}</span>
+    <span data-aos="fade-up">
+      <a
+        href="https://www.instagram.com/paihemeteam/?hl=fr"
+        alt="Intagram PAIHEME TEAM"
+        target="_blank"
+        rel="noopener noreferrer"
+        >> Suis-nous sur les réseaux{{ 'icon_instagram.svg' | inline_asset_content -}}
+        {{- 'icon_tiktok.svg' | inline_asset_content -}}
+      </a>
+    </span>
+  </div>
+  <div data-aos="fade-left" class="tylt_team_photo__image">
+    <img src="{{ section.settings.image | image_url }}" alt="Photo de la PAIHEME TEAM">
+  </div>
+</section>
