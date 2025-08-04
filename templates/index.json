@@ -1,52 +1,31 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "hero-slideshow": {
-      "type": "slideshow",
-      "blocks": {
-        "slide-0": {
-          "type": "slide",
-          "settings": {
-            "heading_size": "h1",
-            "subheading": "",
-            "link": "shopify://collections",
-            "button_style_secondary": false,
-            "box_align": "middle-right",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide-0"
-      ],
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "small",
-        "slider_visual": "dots",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": true
-      }
-    },
     "all-products": {
       "type": "featured-collection",
       "settings": {
-        "heading_size": "h2",
-        "show_description": true,
-        "description_style": "subtitle",
         "collection": "all",
         "products_to_show": 24,
-        "columns_desktop": 6,
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": true,
+        "description_style": "subtitle",
+        "columns_desktop": 2,
+        "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
         "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -58,72 +37,32 @@
         "padding_bottom": 24
       }
     },
-    "collection-list": {
-      "type": "collection-list",
+    "hats_slide_responsive_AJkNpR": {
+      "type": "hats-slide_responsive",
       "blocks": {
-        "collection-0": {
-          "type": "featured_collection",
+        "slide_rj7WY9": {
+          "type": "slide",
           "settings": {
-            "collection": ""
-          }
-        },
-        "collection-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "collection-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "collection-3": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
+            "date_picker": "12-24-2022",
+            "image_slide_desk": "shopify://shop_images/paslebonbackground.png",
+            "image_slide_mobile": "shopify://shop_images/paslebonmobile.png",
+            "link_slide": "",
+            "credit_name": "",
+            "credit_link": ""
           }
         }
       },
       "block_order": [
-        "collection-0",
-        "collection-1",
-        "collection-2",
-        "collection-3"
+        "slide_rj7WY9"
       ],
+      "name": "TYLT - Slides",
       "settings": {
-        "heading_size": "h2",
-        "image_ratio": "square",
-        "columns_desktop": 4,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image-banner": {
-      "type": "image-banner",
-      "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "desktop_content_position": "top-left",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "margin-top": 0
       }
     }
   },
   "order": [
-    "hero-slideshow",
     "all-products",
-    "collection-list",
-    "image-banner"
+    "hats_slide_responsive_AJkNpR"
   ]
 }
