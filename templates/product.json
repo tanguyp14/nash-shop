@@ -47,6 +47,13 @@
             "image_ratio": "square",
             "enable_quick_add": false
           }
+        },
+        "buy_buttons_H3zg6e": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
         }
       },
       "block_order": [
@@ -54,7 +61,8 @@
         "title",
         "variant_picker_F3enWt",
         "tylt_custom_qtt_price_fAMEHR",
-        "tylt_complementary_rf8cN3"
+        "tylt_complementary_rf8cN3",
+        "buy_buttons_H3zg6e"
       ],
       "settings": {
         "enable_sticky_info": true,
