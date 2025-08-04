@@ -17,7 +17,7 @@
         "announcement_NqHrDH": {
           "type": "announcement",
           "settings": {
-            "text": "🎁🎄  LIVRAISON GRATUITE JUSQU'A NOËL !  🎄🎁",
+            "text": "NASH SHOP - Nicolas",
             "link": ""
           }
         }
@@ -25,7 +25,6 @@
       "block_order": [
         "announcement_NqHrDH"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "accent-2",
         "show_line_separator": true,
@@ -36,20 +35,12 @@
         "enable_language_selector": false
       }
     },
-    "hats_free_shipping_nBDHnX": {
-      "type": "hats-free-shipping",
-      "settings": {
-        "text_free_shipping": "avec Mondial Relay",
-        "price_free_shipping": 55,
-        "color": "#efba19"
-      }
-    },
     "header": {
       "type": "header",
       "custom_css": [],
       "settings": {
         "logo_position": "top-center",
-        "menu": "menu-2025",
+        "menu": "",
         "menu_type_desktop": "tylt-menu",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
@@ -67,7 +58,6 @@
   },
   "order": [
     "announcement_bar_Fwmn4R",
-    "hats_free_shipping_nBDHnX",
     "header"
   ]
 }
