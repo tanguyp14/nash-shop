@@ -11,6 +11,9 @@
   "markets": {
     "fr": {
       "parent": "@default"
+    },
+    "suisse": {
+      "parent": "@default"
     }
   }
 }

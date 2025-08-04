@@ -12,5 +12,17 @@
   "context": {
     "market": "suisse"
   },
-  "sections": {}
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "variant_picker_F3enWt": {
+          "settings": {
+            "swatch_shape": "circle",
+            "picker_type": "button"
+          }
+        }
+      }
+    }
+  }
 }
