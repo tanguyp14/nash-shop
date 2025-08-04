@@ -1,0 +1,9 @@
+.utility-bar:has(.announcement-bar){
+  background-color: $dark-blue;
+  .announcement-bar p{
+    color: $rose;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+}
