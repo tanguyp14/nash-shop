@@ -11,9 +11,10 @@
   "current": {
     "logo": "shopify://shop_images/Pas_le_bonlogo.png",
     "logo_width": 90,
-    "type_header_font": "murecho_n4",
+    "favicon": "shopify://shop_images/Pas_le_bonlogo_082efa5c-b6c5-4d23-8243-af6b15dc5c6b.png",
+    "type_header_font": "sans-serif",
     "heading_scale": 100,
-    "type_body_font": "murecho_n4",
+    "type_body_font": "sans-serif",
     "body_scale": 100,
     "page_width": 1200,
     "spacing_sections": 0,
