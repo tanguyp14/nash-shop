@@ -51,28 +51,6 @@
     },
     "174463613490fcb3e2": {
       "type": "apps",
-      "blocks": {
-        "forms_inline_BrKPJU": {
-          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
-          "settings": {
-            "form_id": "427443",
-            "text_color": "#000000",
-            "button_background_color": "#ff8112",
-            "button_label_color": "#ffffff",
-            "links_color": "#ff8112",
-            "errors_color": "#e02229",
-            "text_alignment": "center",
-            "form_alignment": "center",
-            "padding_top": 20,
-            "padding_bottom": 64,
-            "padding_right": 0,
-            "padding_left": 0
-          }
-        }
-      },
-      "block_order": [
-        "forms_inline_BrKPJU"
-      ],
       "settings": {
         "include_margins": true
       }

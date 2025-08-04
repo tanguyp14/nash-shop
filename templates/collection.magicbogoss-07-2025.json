@@ -25,6 +25,7 @@
       "settings": {
         "products_per_page": 36,
         "columns_desktop": 5,
+        "columns_mobile": "2",
         "color_scheme": "accent-1",
         "image_ratio": "portrait",
         "image_shape": "default",
@@ -35,7 +36,6 @@
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": true,
-        "columns_mobile": "2",
         "padding_top": 0,
         "padding_bottom": 60
       }
@@ -96,19 +96,18 @@
       ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
+        "collection": "magic-bogoss-prints",
+        "products_to_show": 2,
         "title": "Les affiches",
-        "icon_collec": "shopify://shop_images/KANJI.webp",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "magic-bogoss-prints",
-        "products_to_show": 2,
         "columns_desktop": 2,
+        "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
         "color_scheme": "",
         "image_ratio": "portrait",
         "image_shape": "default",

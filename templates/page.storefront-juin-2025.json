@@ -100,9 +100,7 @@
         },
         "email_form_g6hC4a": {
           "type": "email_form",
-          "settings": {
-            "tags_text_tylt": "drop-pkm-06-2025"
-          }
+          "settings": {}
         }
       },
       "block_order": [
