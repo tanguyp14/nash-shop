@@ -93,10 +93,16 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "tylt_full_size_image_product_3gXWaK": {
+      "type": "tylt-full-size-image-product",
+      "name": "TYLT - FullSizeImgproduct",
+      "settings": {}
     }
   },
   "order": [
     "main",
+    "tylt_full_size_image_product_3gXWaK",
     "related-products"
   ]
 }
