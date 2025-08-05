@@ -11,6 +11,15 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "tylt_footer_VXA7wx": {
+      "type": "tylt-footer",
+      "name": "TYLT - Footer",
+      "settings": {
+        "menu": "main-menu",
+        "titre": "",
+        "sous_titre": ""
+      }
+    },
     "footer": {
       "type": "footer",
       "disabled": true,
@@ -32,6 +41,7 @@
     }
   },
   "order": [
+    "tylt_footer_VXA7wx",
     "footer"
   ]
 }
