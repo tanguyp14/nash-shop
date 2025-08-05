@@ -4,7 +4,7 @@
     {% for handle in complementary %}
       {% assign current_product = all_products[handle] %}
       <li class="complementary-tylt{% if main_product.tags contains 'Horizontal' %} horizontal{% endif %}{% if main_product.tags contains 'Carte postal' %} cp{% endif %}{% for tag in current_product.tags %} {{ tag | handleize }}{% endfor %}">
-        current_product.tags: {{ current_product.tags | join: ', ' }}
+        {% comment %} current_product.tags: {{ current_product.tags | join: ', ' }} {% endcomment %}
 
         {% assign custom_image = '' %}
         {% assign custom_ratio = 'portrait' %}
@@ -21,7 +21,7 @@
               {% assign custom_ratio = 'horizontal' %}
             {% endif %}
           {% else %}
-            {% assign custom_ratio = block.settings.image_ratio %}
+            {% assign custom_ratio = 'portrait' %}
           {% endif %}
         {% elsif current_product.tags contains 'Baguette' %}
           {% assign custom_image = main_product.featured_image %}
