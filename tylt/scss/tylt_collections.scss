@@ -78,7 +78,7 @@ product-recommendations {
     .card {
         .card__inner {
             aspect-ratio: 30/40;
-            background-color: transparent;
+            background-color: grey;
 
             .card__media {
                 overflow: visible;
@@ -86,8 +86,9 @@ product-recommendations {
                 .media {
                     overflow: visible;
 
-                    img {
-                        object-fit: contain;
+                    img{
+                        object-fit: scale-down;
+                        object-position: center center;
                         filter: drop-shadow(0px 0px 10px $rgb);
                     }
                 }

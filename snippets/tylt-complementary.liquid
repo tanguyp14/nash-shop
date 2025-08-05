@@ -4,28 +4,32 @@
     {% for handle in complementary %}
       {% assign current_product = all_products[handle] %}
       <li class="complementary-tylt{% if main_product.tags contains 'Horizontal' %} horizontal{% endif %}{% if main_product.tags contains 'Carte postal' %} cp{% endif %}{% for tag in current_product.tags %} {{ tag | handleize }}{% endfor %}">
-        {% assign custom_image = '' %}
+        current_product.tags: {{ current_product.tags | join: ', ' }}
 
+        {% assign custom_image = '' %}
+        {% assign custom_ratio = 'portrait' %}
+        
         {% if current_product.tags contains 'Cadre' %}
           {% assign custom_image = main_product.featured_image %}
           {% if current_product.tags contains 'c30x30' %}
-        {% assign custom_ratio = "square" %}
-          {%  elsif main_product.tags contains 'Horizontal' %}
+            {% assign custom_ratio = 'square' %}
+
+          {% elsif main_product.tags contains 'Horizontal' %}
             {% if main_product.tags contains 'Carte postal' %}
-              {%  assign custom_ratio = "horizontal-cp" %}
-              {% else %}
-                {%  assign custom_ratio = "horizontal" %}
+              {% assign custom_ratio = 'horizontal-cp' %}
+            {% else %}
+              {% assign custom_ratio = 'horizontal' %}
             {% endif %}
           {% else %}
-        {% assign custom_ratio = block.settings.image_ratio %}
+            {% assign custom_ratio = block.settings.image_ratio %}
           {% endif %}
         {% elsif current_product.tags contains 'Baguette' %}
           {% assign custom_image = main_product.featured_image %}
         {% endif %}
 
         {% render 'card-product',
-          card_product: current_product,
           media_aspect_ratio: custom_ratio,
+          card_product: current_product,
           show_secondary_image: false,
           lazy_load: false,
           skip_styles: false,
