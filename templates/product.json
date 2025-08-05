@@ -69,7 +69,7 @@
         "gallery_layout": "thumbnail_slider",
         "media_position": "left",
         "image_zoom": "none",
-        "mobile_thumbnails": "hide",
+        "mobile_thumbnails": "columns",
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 36,
