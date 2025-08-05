@@ -1,0 +1,18 @@
+{% schema %}
+{
+  "name": "TYLT - FullSizeImgproduct",
+  "settings": [
+  ],
+  "presets": [
+    {
+      "name": "TYLT - FullSizeImgproduct"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="page-width tylt_full_size_image_product">
+  {% if product %}
+    <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
+  {% endif %}
+</section>
