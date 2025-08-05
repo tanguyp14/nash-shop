@@ -1,8 +1,7 @@
 {% schema %}
 {
   "name": "TYLT - FullSizeImgproduct",
-  "settings": [
-  ],
+  "settings": [],
   "presets": [
     {
       "name": "TYLT - FullSizeImgproduct"
@@ -13,6 +12,9 @@
 
 <section class="page-width tylt_full_size_image_product">
   {% if product %}
-    <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
+    {% if product.tags contains 'Print' %}
+      <img data-aos="fade-up" src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
+    {% endif %}
   {% endif %}
 </section>
+

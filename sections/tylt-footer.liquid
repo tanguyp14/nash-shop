@@ -4,82 +4,34 @@
   });
 </script>
 
-<footer class="tylt_custom_footer_email">
-  <div class="tylt_custom_footer_email__container_left">
-    <h3 data-aos="fade-right">{{ section.settings.titre }}</h3>
-    <p data-aos="fade-right" data-aos-delay="200">{{ section.settings.sous_titre }}</p>
-    <div data-aos="fade-right" data-aos-delay="250" class="tylt_custom_footer_email__container_left__form">
-      {% form 'customer', class: 'newsletter-form' %}
-        <input type="hidden" name="contact[tags]" value="newsletter">
-        <div class="newsletter-form__field-wrapper">
-          <div class="field">
-            <input
-              id="NewsletterForm--{{ section.id }}"
-              type="email"
-              name="contact[email]"
-              class="field__input"
-              value="{{ form.email }}"
-              aria-required="true"
-              autocorrect="off"
-              autocapitalize="off"
-              autocomplete="email"
-              {% if form.errors %}
-                autofocus
-                aria-invalid="true"
-                aria-describedby="Newsletter-error--{{ section.id }}"
-              {% elsif form.posted_successfully? %}
-                aria-describedby="Newsletter-success--{{ section.id }}"
-              {% endif %}
-              placeholder="{{ 'newsletter.label' | t }}"
-              required
-            >
-            <label class="field__label" for="NewsletterForm--{{ section.id }}">
-              {{ 'newsletter.label' | t }}
-            </label>
-            <button
-              type="submit"
-              class="newsletter-form__button field__button"
-              name="commit"
-              id="Subscribe"
-              aria-label="{{ 'newsletter.button_label' | t }}"
-            >
-              {% render 'icon-arrow' %}
-            </button>
-          </div>
-          {%- if form.errors -%}
-            <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
-              {%- render 'icon-error' -%}
-              {{- form.errors.translated_fields.email | capitalize }}
-              {{ form.errors.messages.email -}}
-            </small>
-          {%- endif -%}
-        </div>
-        {%- if form.posted_successfully? -%}
-          <h3
-            class="newsletter-form__message newsletter-form__message--success form__message"
-            id="Newsletter-success--{{ section.id }}"
-            tabindex="-1"
-            autofocus
-          >
-            {% render 'icon-success' -%}
-            {{- 'newsletter.success' | t }}
-          </h3>
-        {%- endif -%}
-      {% endform %}
+<footer class="tylt_custom_footer">
+  <section class="tylt_custom_footer__top">
+    a
+  </section>
+  <section class="tylt_custom_footer__middle" style="background-image: url('{{ section.settings.image-bg-middle | image_url }}');">
+
+
+  </section>
+  <section class="tylt_custom_footer__bottom">
+    <div class="tylt_custom_footer__copyright">
+      &copy; {{ 'now' | date: '%Y' }}
+      {{ shop.name }} - Tous droits réservés
+      <span class="tylt_custom_footer__dev">
+        - Site développé par <a href="https://le-tengu.fr" target="_blank" rel="noopener">TYLT</a> -&nbsp;
+      </span>
     </div>
-  </div>
-  <div class="tylt_custom_footer_email__bottom">
-    <div class="tylt_custom_footer_email__bottom__menu">
-      {% render 'footer-menu-tylt' %}
-    </div>
-    <div class="tylt_custom_footer_email__bottom__sign">
-      <span
-        >Developpement du site : <a href="https://le-tengu.fr" target="_blank" rel="noopener noreferrer">TYLT</a> -
-        Réalisation graphique :
-        <a href="https://paiheme.com" target="_blank" rel="noopener noreferrer">Paiheme Studio</a></span
-      >
-    </div>
-  </div>
+    {% if section.settings.menu != blank %}
+      <nav class="tylt_custom_footer__nav">
+        <ul>
+          {% for link in linklists[section.settings.menu].links %}
+            <li>
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    {% endif %}
+  </section>
 </footer>
 
 {% schema %}
@@ -90,28 +42,12 @@
       "name": "TYLT - Footer"
     }
   ],
-  "blocks": [
-    {
-      "type": "@app"
-    }
-  ],
   "settings": [
     {
-      "type": "link_list",
-      "id": "menu",
-      "default": "main-menu",
-      "label": "t:sections.header.settings.menu.label"
+      "type": "image_picker",
+      "id": "image-bg-middle",
+      "label": "Image de fond (section milieu)"
     },
-    {
-      "type": "text",
-      "id": "titre",
-      "label": "Titre"
-    },
-    {
-      "type": "text",
-      "id": "sous_titre",
-      "label": "Sous-titre"
-    }
   ]
 }
 {% endschema %}

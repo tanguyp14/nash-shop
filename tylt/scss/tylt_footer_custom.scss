@@ -1,0 +1,81 @@
+.tylt_custom_footer {
+    background-color: $dark-blue;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+
+    &__top {
+        width: 100%;
+        display: grid;
+        height: 80px;
+        background-color: $violet;
+        border-bottom: $rose 1px solid;
+    }
+
+    &__middle{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__bottom {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        background-color: $dark-blue;
+        color: $rose;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: center;
+        @include breakpoints(sm, max){
+            font-size: 8px;
+        }
+
+        a {
+            color: $rose;
+            text-decoration: none;
+            text-decoration: none;
+
+
+            &:visited,
+            &:focus {
+                color: $rose;
+                text-decoration: none;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+
+            li {
+                margin: 0 1pt;
+
+                &::after {
+                    content: "-";
+                    margin: 0 1pt;
+                }
+
+                &:last-child::after {
+                    content: "";
+                }
+
+
+            }
+        }
+    }
+}
