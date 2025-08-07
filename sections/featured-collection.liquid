@@ -72,14 +72,6 @@
           {%- if section.settings.icon_collec != blank -%}<span class="icon" style="background-image: url('{{ section.settings.icon_collec | image_url }}')"></span>{%- endif -%}<h2  class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
             {{ section.settings.title }}
           </h2>
-          <a
-            class="title link"
-            href="https://www.instagram.com/paiheme/"
-            aria-label="@paiheme"
-            alt="@paiheme"
-            target='_blank'
-            >@paiheme</a
-          >
         </div>
       {%- endif -%}
       {%- if section.settings.description != blank
