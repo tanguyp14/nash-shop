@@ -6,11 +6,44 @@
 
 <footer class="tylt_custom_footer">
   <section class="tylt_custom_footer__top">
-    a
+    <div class="tylt_custom_footer__social">
+      {% if settings.instagram_url != blank %}
+        <a
+          href="{{ settings.instagram_url }}"
+          target="_blank"
+          rel="noopener"
+          class="tylt_custom_footer__social-link tylt_custom_footer__social-link--instagram"
+        >
+          <span class="icon-instagram" aria-hidden="true"></span>
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      {% endif %}
+      {% if settings.snapchat_url != blank %}
+        <a
+          href="{{ settings.snapchat_url }}"
+          target="_blank"
+          rel="noopener"
+          class="tylt_custom_footer__social-link tylt_custom_footer__social-link--snapchat"
+        >
+          <span class="icon-snapchat" aria-hidden="true"></span>
+          <span class="visually-hidden">Snapchat</span>
+        </a>
+      {% endif %}
+    </div>
   </section>
-  <section class="tylt_custom_footer__middle" style="background-image: url('{{ section.settings.image-bg-middle | image_url }}');">
-
-
+  <section
+    class="tylt_custom_footer__middle"
+    style="background-image: url('{{ section.settings.image-bg-middle | image_url }}');"
+  >
+    <div class="tylt_custom_footer__images">
+      {% if section.settings.image_mid != blank %}
+        <img
+          src="{{ section.settings.image_mid | image_url }}"
+          alt="Image Mid"
+          class="tylt_custom_footer__image tylt_custom_footer__image--mid"
+        >
+      {% endif %}
+    </div>
   </section>
   <section class="tylt_custom_footer__bottom">
     <div class="tylt_custom_footer__copyright">
@@ -52,6 +85,11 @@
       "type": "link_list",
       "id": "menu",
       "label": "Menu du footer"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mid",
+      "label": "Image Avant - Mid"
     }
   ]
 }

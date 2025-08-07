@@ -21,6 +21,9 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        img{
+            max-width: 90vw;
+        }
     }
 
     &__bottom {
