@@ -67,7 +67,7 @@
     data-id="{{ section.id }}"
   >
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
-      {%- if section.settings.title != blank -%}
+      {%- if section.settings.icon_collec != blank -%}
         <div data-aos="fade-up" class="title__container">
           {%- if section.settings.icon_collec != blank -%}<span class="icon" style="background-image: url('{{ section.settings.icon_collec | image_url }}')"></span>{%- endif -%}<h2  class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
             {{ section.settings.title }}
