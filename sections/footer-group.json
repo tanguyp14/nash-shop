@@ -15,7 +15,10 @@
       "type": "tylt-footer",
       "name": "TYLT - Footer",
       "settings": {
-        "image-bg-middle": "shopify://shop_images/Grand_Footer.png"
+        "image-bg-middle": "shopify://shop_images/Grand_Footer.png",
+        "menu": "footer",
+        "logo_left": "shopify://shop_images/doubleLogo.png",
+        "image_mid": "shopify://shop_images/Logo_Footer.png"
       }
     },
     "footer": {
