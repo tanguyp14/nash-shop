@@ -345,4 +345,17 @@ body {
             }
         }
     }
+    .related-products__heading{
+        text-align: center;
+        border-radius: 30px;
+        background-color: $dark-blue;
+        color: white;
+        text-transform: uppercase;
+        font-size: 12pt;
+        width: fit-content;
+        padding: 2px 50px;
+        margin: auto;
+        font-weight: 200;
+        margin-bottom: 50px;
+    }
 }
