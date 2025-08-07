@@ -6,6 +6,9 @@ body {
         &__media {
             box-shadow: 0px 0px 10px rgba($dark-blue, 0.5);
         }
+                .product__media-list .product__media-item{
+            max-width: 100%;
+        }
 
         .tylt-slick-product {
             position: relative;
@@ -110,6 +113,7 @@ body {
         .product.grid {
             align-items: center;
         }
+
 
         &__title {
             h1 {
