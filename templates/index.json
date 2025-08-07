@@ -19,6 +19,29 @@
         "icon": "shopify://shop_images/Nash-Shop_Logo_a061239b-3dd9-4591-950d-e56ed8cd1247.png"
       }
     },
+    "hats_slide_responsive_AJkNpR": {
+      "type": "hats-slide_responsive",
+      "blocks": {
+        "slide_rj7WY9": {
+          "type": "slide",
+          "settings": {
+            "date_picker": "12-24-2022",
+            "image_slide_desk": "shopify://shop_images/Nash-Shop_Grand_Header.png",
+            "image_slide_mobile": "shopify://shop_images/Nash-Shop_Grand_Header_Mobil.png",
+            "link_slide": "",
+            "credit_name": "",
+            "credit_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_rj7WY9"
+      ],
+      "name": "TYLT - Slides",
+      "settings": {
+        "margin-top": 0
+      }
+    },
     "all-products": {
       "type": "featured-collection",
       "settings": {
@@ -45,29 +68,6 @@
         "swipe_on_mobile": false,
         "padding_top": 24,
         "padding_bottom": 24
-      }
-    },
-    "hats_slide_responsive_AJkNpR": {
-      "type": "hats-slide_responsive",
-      "blocks": {
-        "slide_rj7WY9": {
-          "type": "slide",
-          "settings": {
-            "date_picker": "12-24-2022",
-            "image_slide_desk": "shopify://shop_images/Nash-Shop_Grand_Header.png",
-            "image_slide_mobile": "shopify://shop_images/Nash-Shop_Grand_Header_Mobil.png",
-            "link_slide": "",
-            "credit_name": "",
-            "credit_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_rj7WY9"
-      ],
-      "name": "TYLT - Slides",
-      "settings": {
-        "margin-top": 0
       }
     }
   },
