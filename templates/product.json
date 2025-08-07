@@ -84,7 +84,7 @@
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "",
+        "heading": "Autres produits qui pourraient vous plaire",
         "heading_size": "h2",
         "products_to_show": 6,
         "columns_desktop": 2,
