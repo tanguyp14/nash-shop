@@ -6,10 +6,46 @@
 
     &__top {
         width: 100%;
-        display: grid;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         height: 80px;
         background-color: $violet;
         border-bottom: $rose 1px solid;
+        &__logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            flex-direction: row;
+        }
+        &__social{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            flex-direction: row;
+            gap: 10px;
+
+            a {
+                color: white;
+                text-decoration: none;
+                height: 24px;
+                width: 24px;
+                overflow: visible;
+                transition: all 0.2s ease-in-out;
+
+                &:visited,
+                &:focus {
+                    color: white;
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    rotate: -15deg;
+                }
+            }
+        }
     }
 
     &__middle{
@@ -40,6 +76,9 @@
         text-align: center;
         @include breakpoints(sm, max){
             font-size: 8px;
+            flex-direction: column-reverse;
+            padding: 10px 0px;
+            height: auto;
         }
 
         a {
