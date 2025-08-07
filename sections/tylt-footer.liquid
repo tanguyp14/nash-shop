@@ -17,7 +17,7 @@
       &copy; {{ 'now' | date: '%Y' }}
       {{ shop.name }} - Tous droits réservés
       <span class="tylt_custom_footer__dev">
-        - Site développé par <a href="https://le-tengu.fr" target="_blank" rel="noopener">TYLT</a> -&nbsp;
+        - Site développé par <a href="https://le-tengu.fr" target="_blank" rel="noopener">A3PROD</a> -&nbsp;
       </span>
     </div>
     {% if section.settings.menu != blank %}
@@ -48,6 +48,11 @@
       "id": "image-bg-middle",
       "label": "Image de fond (section milieu)"
     },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu du footer"
+    }
   ]
 }
 {% endschema %}
