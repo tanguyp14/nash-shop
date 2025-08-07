@@ -34,17 +34,6 @@ product-recommendations {
                 letter-spacing: normal;
                 margin: 0;
                 text-transform: uppercase;
-
-                &::after {
-                    content: 'ペエムスタジオ';
-                    font-size: 10px;
-                    letter-spacing: 1.1px;
-                    margin-left: 10px;
-
-                    @include breakpoints(sm, max) {
-                        display: none
-                    }
-                }
             }
 
             .title.link {
@@ -113,7 +102,13 @@ product-recommendations {
         }
 
         &__information:has(.price) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+
             .h5 {
+                min-width: 80%;
                 text-transform: uppercase;
                 font-weight: 800;
                 font-size: 1em;
@@ -126,12 +121,15 @@ product-recommendations {
             }
 
             >.card-information:has(.price) {
+                display: flex;
+                justify-content: flex-end;
+                align-items: end;
 
                 >.price {
-                    font-size: 12px;
-                    opacity: 0.7;
+                    font-size: 0.8em;
+                    font-weight: 700;
                     letter-spacing: normal;
-                    text-transform: lowercase;
+                    text-transform: uppercase;
                     margin-top: 0px;
                 }
 

@@ -1,0 +1,28 @@
+header{
+    &.header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        nav.header__inline-menu{
+            min-width: 50%;
+            display: flex;
+            justify-content: center;
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                li{
+                    a{
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            @include breakpoints(md,max) {
+                display: none;
+            }
+        }
+        
+    }
+}

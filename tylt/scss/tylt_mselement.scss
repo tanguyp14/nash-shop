@@ -29,17 +29,27 @@
             }
 
             &.tylt-nash {
-                width: 118px;
-                top: -3vw;
-                left: 35vw;
+                width: 80px;
+                top: -20px;
+                left: 10vw;
                 aspect-ratio: 1/1;
                 transform-origin: center center;
                 animation: rotate infinite ease-in-out 20s alternate;
 
-                @include breakpoints(sm, max) {
+                @include breakpoints(sm) {
                     width: 80px;
-                    top: -5vw;
-                    left: 15vw;
+                    top: -20px;
+                    left: 25vw;
+                }
+                @include breakpoints(md) {
+                    width: 118px;
+                    top: -20px;
+                    left: 18vw;
+                }
+                @include breakpoints(lg) {
+                    width: 118px;
+                    top: -20px;
+                    left: 27vw;
                 }
             }
         }
