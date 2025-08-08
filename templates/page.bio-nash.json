@@ -26,10 +26,19 @@
         "tylt_aos": "zoom-in",
         "icon": "shopify://shop_images/Nash-Shop_Logo_a061239b-3dd9-4591-950d-e56ed8cd1247.png"
       }
+    },
+    "tylt_nash_bio_dqrbHr": {
+      "type": "tylt-nash-bio",
+      "name": "TYLT - Nash Bio",
+      "settings": {
+        "image_with_text_image": "shopify://shop_images/Monstre_Melon.png",
+        "bio_text": "<p>J'ai exploré le graffiti, la peinture et le street art avant de me tourner vers la réalisation publicitaire, puis vers le design graphique, que j'exerce en tant qu'indépendant depuis plus de 15 ans. Un quotidien au service de marques, d'entreprises ou de la culture.</p><p>Si, tout au long de ma carrière, j'ai aimé expérimenter les techniques et les tendances, je me concentre aujourd'hui sur la création d'images influencées par la subculture, le folklore et les traditions du monde et de leurs symboliques, l'architecture pour sa rigueur et ses structures, ainsi que la nature, source inépuisable de formes organiques</p><p>Un soin particulier est apporté à la composition, à la lisibilité, à la cohérence et à l'équilibre des formes. Chaque image est pensée comme un ensemble vivant, où chaque élément, chaque détail, a sa place et son histoire.</p><p>Bien que mon activité professionnelle m'amène à suivre de près l'évolution des technologies, il est essentiel pour moi de concevoir les œuvres présentées sur cette plateforme sans recours à l'intelligence générative, afin de proposer un travail authentique, personnel et singulier.</p><p>Toujours en quête d'idées, d'inspirations, et dans une démarche de partage et d'échange, je réalise la quasi-totalité de mes illustrations en direct sur ma chaîne Twitch.</p>"
+      }
     }
   },
   "order": [
     "main",
-    "tylt_movable_solo_elements_cgnpQ8"
+    "tylt_movable_solo_elements_cgnpQ8",
+    "tylt_nash_bio_dqrbHr"
   ]
 }
