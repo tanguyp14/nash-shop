@@ -11,13 +11,25 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "tylt_movable_solo_elements_cgnpQ8": {
+      "type": "tylt-movable-solo-elements",
+      "name": "TYLT - Movable Solo element",
+      "settings": {
+        "tylt_class": "tylt-nash",
+        "button_link": "",
+        "tylt_aos": "zoom-in",
+        "icon": "shopify://shop_images/Nash-Shop_Logo_a061239b-3dd9-4591-950d-e56ed8cd1247.png"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "tylt_movable_solo_elements_cgnpQ8"
   ]
 }
