@@ -10,16 +10,17 @@
         {% assign custom_ratio = 'portrait' %}
         
         {% if current_product.tags contains 'Cadre' %}
-          {% assign custom_image = main_product.featured_image %}
+          {% comment %} Modif pour nash {% endcomment %}
+          {% assign custom_image = 'Cadre_2.png' %}
           {% if current_product.tags contains 'c30x30' %}
             {% assign custom_ratio = 'square' %}
 
-          {% elsif main_product.tags contains 'Horizontal' %}
+          {% comment %} {% elsif main_product.tags contains 'Horizontal' %}
             {% if main_product.tags contains 'Carte postal' %}
               {% assign custom_ratio = 'horizontal-cp' %}
             {% else %}
               {% assign custom_ratio = 'horizontal' %}
-            {% endif %}
+            {% endif %} {% endcomment %}
           {% else %}
             {% assign custom_ratio = 'portrait' %}
           {% endif %}

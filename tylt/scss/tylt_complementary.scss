@@ -135,19 +135,19 @@
 
                 &.cadre {
                     .card__media {
-                        .media {
-                            border: 7px double pink;
-                            border-image: url('cadrebois_.png') 25 25 round;
-                        }
+                        // .media {
+                        //     border: 7px double pink;
+                        //     border-image: url('cadrebois_.png') 25 25 round;
+                        // }
                     }
 
                     &.horizontal {
-                        .card__media {
-                            .media {
-                                border: 5px double pink;
-                                border-image: url('cadrebois_.png') 25 25 round;
-                            }
-                        }
+                        // .card__media {
+                        //     .media {
+                        //         border: 5px double pink;
+                        //         border-image: url('cadrebois_.png') 25 25 round;
+                        //     }
+                        // }
                     }
 
                     &.c10x15 {

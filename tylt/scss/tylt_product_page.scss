@@ -2,12 +2,21 @@ body {
     .product {
         align-items: center;
         letter-spacing: normal;
-
+&__info-wrapper{
+    align-self: flex-start;
+    padding-top: 30px;
+}
         &__media {
-            box-shadow: 0px 0px 10px rgba($dark-blue, 0.5);
+            // box-shadow: 0px 0px 10px rgba($dark-blue, 0.5);
+            border: 1px solid $dark-blue;
+            &-list{
+                max-width: 500px;
+            }
+
         }
                 .product__media-list .product__media-item{
-            max-width: 100%;
+            max-width: 500px;
+            margin: auto;
         }
 
         .tylt-slick-product {

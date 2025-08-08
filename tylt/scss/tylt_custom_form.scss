@@ -8,9 +8,11 @@
         .field {
             display: flex;
             flex-direction: column-reverse;
-
-            input {
+            
+            input,textarea {
+                border: 2px solid $rose;
                 margin-bottom: 30px;
+                padding: 10px 5px;
             }
 
             label {
@@ -19,9 +21,12 @@
                 left: 0;
                 top: 0px;
             }
+            &::after{
+                box-shadow: none;
+            }
         }
 
-        .field__input:focus ~ .field__label {
+        .field__input:focus ~ .field__label,.field__input:not(:placeholder-shown) ~ .field__label {
                 position: relative;
                 color: $rose;
                 left: 0;
