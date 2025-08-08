@@ -19,6 +19,7 @@
             position: absolute;
             width: fit-content;
 
+
             .item_image {
                 display: flex;
                 background-size: 100%;
@@ -51,6 +52,14 @@
                     top: -20px;
                     left: 27vw;
                 }
+            }
+            &.tylt-nash-contact{
+                transform-origin: center center;
+                width: 118px;
+                top: 10vh;
+                left: calc(50vw - 118px / 2);
+                aspect-ratio: 1/1;
+                animation: rotate infinite ease-in-out 10s alternate;
             }
         }
     }

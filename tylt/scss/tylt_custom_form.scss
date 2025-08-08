@@ -1,0 +1,47 @@
+.tylt-custom-form {
+    background-color: $violet;
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        .field {
+            display: flex;
+            flex-direction: column-reverse;
+
+            input {
+                margin-bottom: 30px;
+            }
+
+            label {
+                position: relative;
+                color: $rose;
+                left: 0;
+                top: 0px;
+            }
+        }
+
+        .field__input:focus ~ .field__label {
+                position: relative;
+                color: $rose;
+                left: 0;
+                top: 0px;
+                font-size: 16px;
+                font-weight: 900;
+        }
+        .contact__button{
+            width: 300px;
+            margin: 20px auto;
+            button{
+                width: 100%;
+                border-radius: 30px;
+                color: $rose;
+                text-transform: uppercase;
+                &::after{
+                border-radius: 30px;
+
+                }
+            }
+        }
+    }
+}
