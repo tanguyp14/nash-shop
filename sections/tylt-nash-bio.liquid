@@ -1,0 +1,35 @@
+{% schema %}
+{
+  "name": "TYLT - Nash Bio",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_with_text_image",
+      "label": "Image"
+    },
+    {
+      "type": "richtext",
+      "id": "bio_text",
+      "label": "Bio Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "TYLT - Nash Bio"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="tylt_nash_bio">
+  {% if section.settings.image_with_text_image %}
+    <div data-aos="zoom-in" class="container">
+    <img  src="{{ section.settings.image_with_text_image | image_url: width: 800 }}" alt="Nash Bio Image">
+    </div>
+  {% endif %}
+  {% if section.settings.bio_text %}
+    <div data-aos="fade-up" class="tylt_nash_bio__text">
+      {{ section.settings.bio_text }}
+    </div>
+  {% endif %}
+</section>
