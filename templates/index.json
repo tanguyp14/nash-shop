@@ -42,6 +42,30 @@
         "margin-top": 0
       }
     },
+    "announcement_bar_eefh3i": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_64zLFq": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to the nash shop !",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_64zLFq"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
     "all-products": {
       "type": "featured-collection",
       "settings": {
@@ -74,6 +98,7 @@
   "order": [
     "tylt_movable_solo_elements_LFmJdM",
     "hats_slide_responsive_AJkNpR",
+    "announcement_bar_eefh3i",
     "all-products"
   ]
 }
